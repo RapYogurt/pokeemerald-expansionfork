@@ -4434,8 +4434,8 @@
     {
       "id": "LAYOUT_SVEALUND",
       "name": "Svealund_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 50,
+      "height": 35,
       "primary_tileset": "gTileset_GeneralLeoBSnow",
       "secondary_tileset": "gTileset_PetalburgLeoBSnow",
       "border_filepath": "data/layouts/Svealund/border.bin",
