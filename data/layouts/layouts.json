@@ -4434,7 +4434,7 @@
     {
       "id": "LAYOUT_SVEALUND",
       "name": "Svealund_Layout",
-      "width": 50,
+      "width": 66,
       "height": 36,
       "primary_tileset": "gTileset_GeneralLeoBSnow",
       "secondary_tileset": "gTileset_PetalburgLeoBSnow",

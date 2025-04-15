@@ -15,12 +15,12 @@
   "connections": [
     {
       "map": "MAP_MOUNTAIN_PASS",
-      "offset": -15,
+      "offset": -1,
       "direction": "up"
     },
     {
       "map": "MAP_RESEARCH_OUTPOST",
-      "offset": 32,
+      "offset": 46,
       "direction": "up"
     }
   ],
