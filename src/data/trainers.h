@@ -42146,20 +42146,21 @@ F_TRAINER_FEMALE |
             },
         },
     },
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
 #line 16865
-    [DIFFICULTY_NORMAL][TRAINER_MAY_PLACEHOLDER] =
+    [DIFFICULTY_NORMAL][TRAINER_DEOXYS_BURIED] =
     {
 #line 16866
-        .trainerName = _("MAY"),
+        .trainerName = _("DEOXYS"),
 #line 16867
         .trainerClass = TRAINER_CLASS_RS_PROTAG,
 #line 16868
-        .trainerPic = TRAINER_PIC_RS_MAY,
+        .trainerPic = TRAINER_PIC_STEVEN,
         .encounterMusic_gender =
 #line 16869
 F_TRAINER_FEMALE | 
 #line 16870
-            TRAINER_ENCOUNTER_MUSIC_MALE,
+            TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
 #line 16871
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
         .partySize = 1,
@@ -42167,14 +42168,18 @@ F_TRAINER_FEMALE |
         {
             {
 #line 16873
-            .species = SPECIES_KYOGRE,
+            .species = SPECIES_DEOXYS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16875
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 16874
-            .lvl = 5,
+            .lvl = 100,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+                .moves = {
+#line 16876
+                MOVE_MEMENTO,
             },
         },
     },
+}

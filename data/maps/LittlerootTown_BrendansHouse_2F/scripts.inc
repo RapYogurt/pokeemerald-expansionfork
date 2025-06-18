@@ -87,6 +87,8 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendanNorth::
 	closemessage
 	applymovement LOCALID_PLAYER, LittlerootTown_BrendansHouse_2F_Movement_PlayerWatchBrendanNorth
 	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, LittlerootTown_BrendansHouse_2F_Movement_BrendanWalkToPCNorth
+	msgbox RivalsHouse_2F_Text_AlmostCaught, MSGBOX_DEFAULT
+	closemessage
 	waitmovement 0
 	return
 

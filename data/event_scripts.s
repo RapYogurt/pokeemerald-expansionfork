@@ -1157,3 +1157,17 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
 	.include "data/scripts/dexnav.inc"
+
+	.include "data/maps/LittlerootTown_Gym/scripts.inc"
+
+	.include "data/maps/LittlerootTown_Pokecenter/scripts.inc"
+
+	.include "data/maps/LittlerootTown_Mart/scripts.inc"
+
+	.include "data/maps/Littleroot_Gym_Real/scripts.inc"
+
+	.include "data/maps/OldaleTower/scripts.inc"
+
+	.include "data/maps/OldaleTowers/scripts.inc"
+
+	.include "data/maps/OldaleTowerPart2/scripts.inc"

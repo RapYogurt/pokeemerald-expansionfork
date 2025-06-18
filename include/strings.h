@@ -2396,6 +2396,18 @@ extern const u8 gText_Summary2[];
 extern const u8 gText_PkmnForSwap[];
 extern const u8 gText_SamePkmnInPartyAlready[];
 extern const u8 gText_Cancel3[];
+extern const u8 gText_KantoStarters[];
+extern const u8 gText_JohtoStarters[];
+extern const u8 gText_HoennStarters[];
+extern const u8 gText_SinnohStarters[];
+extern const u8 gText_UnovaStarters[];
+extern const u8 gText_KalosStarters[];
+extern const u8 gText_AlolaStarters[];
+extern const u8 gText_GalarStarters[];
+extern const u8 gText_PaldeaStarters[];
+
+
+
 
 // Naming Screen
 extern const u8 gText_MoveOkBack[];
@@ -2427,3 +2439,4 @@ extern const u8 gText_Rename[]; // change nickname from summary screen
 extern const u8 gText_CannotSendMonToBoxHM[];
 
 #endif // GUARD_STRINGS_H
+

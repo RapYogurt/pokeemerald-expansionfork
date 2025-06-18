@@ -1138,25 +1138,25 @@ PetalburgCity_Gym_EventScript_GymStatue::
 	end
 
 PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon:
-	.string "DAD: Hm?\p"
-	.string "Well, if it isn't {PLAYER}!\n"
-	.string "So you're all finished moving in?\p"
-	.string "I'm surprised that you managed to\n"
-	.string "get here by yourself.\p"
-	.string "Oh, I see.\n"
-	.string "You're with your POKéMON.\p"
-	.string "Hm… Then I guess you're going to\n"
-	.string "become a TRAINER like me, {PLAYER}.\p"
-	.string "That's great news!\n"
-	.string "I'll be looking forward to it!$"
+	.string "DAD: Hm?\n"
+	.string "Well, if it isn't {PLAYER}!\p"
+	.string "I've got some bad news,\n"
+	.string "Wally's already on his way\p"
+	.string "Yeah, that weird kid next door.\p"
+	.string "We keep trying to get him\n"
+	.string "excited to become a trainer.\p"
+	.string "But he has no interest in classic\n"
+	.string "great starter POKeMON like POOCHYENA\p"
+	.string "Please help us convince him to\n"
+	.string "become a proper POKéMON TRAINER.$"
 
 PetalburgCity_Gym_Text_WallyIdLikeAPokemon:
 	.string "Um… I…\n"
-	.string "I'd like to get a POKéMON, please…$"
+	.string "I'm here to get a POKéMON, please…$"
 
 PetalburgCity_Gym_Text_DadOhYoureWallyRight:
-	.string "DAD: Hm? You're… Uh… Oh, right.\n"
-	.string "You're WALLY, right?$"
+	.string "DAD: Hm? You're… Uh… Oh, really gonna.\n"
+	.string "catch a POOCHYENA, right?$"
 
 PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon:
 	.string "WALLY: I'm going to go stay with my\n"
@@ -1167,13 +1167,13 @@ PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon:
 	.string "I don't know how…$"
 
 PetalburgCity_Gym_Text_DadHmISee:
-	.string "DAD: Hm. I see.$"
+	.string "DAD: Hm. I'm glad you came around to it.$"
 
 PetalburgCity_Gym_Text_DadPlayerGoWithWally:
 	.string "DAD: {PLAYER}, you heard that,\n"
 	.string "right?\p"
 	.string "Go with WALLY and make sure that he\n"
-	.string "safely catches a POKéMON.$"
+	.string "safely catches a POOCHYENA.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon:
 	.string "WALLY, here, I'll loan you my POKéMON.\p"
@@ -1183,57 +1183,57 @@ PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall:
 	.string "WALLY: Oh, wow!\n"
 	.string "A POKéMON!\p"
 	.string "DAD: Hm. I'll give you a POKé BALL, too.\n"
-	.string "Go for it!\p"
+	.string "Go for it! I'm proud of you!\p"
 	.string "WALLY received a POKé BALL!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou:
-	.string "WALLY: Oh, wow!\n"
+	.string "WALLY: Oh, w-wow!\n"
 	.string "Thank you!$"
 
 PetalburgCity_Gym_Text_WouldYouReallyComeWithMe:
-	.string "{PLAYER}… Would you really come\n"
-	.string "with me?$"
+	.string "{PLAYER}… psst,  follow me,\n"
+	.string "I know a shortcut to a better place.$"
 
 PetalburgCity_Gym_Text_DadSoDidItWorkOut:
 	.string "DAD: So, did it work out?$"
 
 PetalburgCity_Gym_Text_WallyThankYouBye:
-	.string "WALLY: Thank you, yes, it did.\n"
-	.string "Here's your POKéMON back.\p"
+	.string "WALLY: Yeah it did, I told you!\n"
+	.string "Here's your little rat POKEMON back.\p"
 	.string "{PLAYER}, thank you for coming along\n"
-	.string "with me.\p"
+	.string "with me to corner the POKéMON.\p"
 	.string "You two are why I was able to catch\n"
-	.string "my POKéMON.\p"
+	.string "my new POKéMON.\p"
 	.string "I promise I'll take really good\n"
-	.string "care of it.\p"
-	.string "Oh! My mom's waiting for me,\n"
-	.string "so I have to go!\p"
-	.string "Bye, {PLAYER}!$"
+	.string "care of her! I love her so much!\p"
+	.string "I have some TM's I was saving for this!\n"
+	.string "Attract, Draining Kiss, Swallow, Charm...\p"
+	.string "Gotta hurry up and train her!$"
 
 PetalburgCity_Gym_Text_DadGoCollectBadges:
-	.string "DAD: Now…\p"
-	.string "{PLAYER}, if you want to become a\n"
-	.string "strong TRAINER, here's my advice.\p"
+	.string "DAD: What have we done...\p"
+	.string "{PLAYER}, I don't want you near him.\n"
+	.string "He's clearly not right in the head.\p"
 	.string "Head for RUSTBORO CITY beyond this\n"
 	.string "town.\p"
-	.string "There, you should challenge\n"
+	.string "There you should find\n"
 	.string "the GYM LEADER, ROXANNE.\p"
-	.string "After her, go on to other POKéMON\n"
-	.string "GYMS and defeat their LEADERS.\p"
-	.string "Collect BADGES from them,\n"
-	.string "understood?\p"
+	.string "Ler her know there's another\n"
+	.string "GOONER in town.\p"
+	.string "ROXANNE knows how to deal with this\n"
+	.string "and she will come help.\p"
 	.string "Of course, I'm a GYM LEADER, too.\n"
-	.string "We'll battle one day, {PLAYER}.\p"
-	.string "But that's only after you become\n"
-	.string "stronger.$"
+	.string "So I'll do what I can for now, {PLAYER}.\p"
+	.string "I hope we'll meet again\n"
+	.string "when you've become stronger.$"
 
 PetalburgCity_Gym_Text_NormanGoToRustboro:
 	.string "DAD: Hm? Aren't you going to the\n"
 	.string "POKéMON GYM in RUSTBORO CITY?\p"
-	.string "There's no challenge for me to\n"
-	.string "battle a greenhorn TRAINER.\p"
-	.string "{PLAYER}, I want you to challenge me\n"
-	.string "when you become a lot stronger.\p"
+	.string "There's no telling what Wally will do\n"
+	.string "when he evolves that poor ralts.\p"
+	.string "{PLAYER}, I want you to ask ROXANNE\n"
+	.string "for help, we need all we can get.\p"
 	.string "I'll battle you, {PLAYER}, when you\n"
 	.string "can show me four GYM BADGES, okay?$"
 

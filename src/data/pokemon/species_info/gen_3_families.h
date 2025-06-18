@@ -12992,11 +12992,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
 #if P_FAMILY_DEOXYS
 #if P_UPDATED_EXP_YIELDS >= GEN_8
-    #define DEOXYS_EXP_YIELD 300
+    #define DEOXYS_EXP_YIELD 1
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define DEOXYS_EXP_YIELD 270
+    #define DEOXYS_EXP_YIELD 1
 #else
-    #define DEOXYS_EXP_YIELD 215
+    #define DEOXYS_EXP_YIELD 1
 #endif
 
     [SPECIES_DEOXYS_NORMAL] =

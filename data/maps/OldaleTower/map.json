@@ -1,0 +1,41 @@
+{
+  "id": "MAP_OLDALE_TOWER",
+  "name": "OldaleTower",
+  "layout": "LAYOUT_OLDALE_TOWER",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_OLDALE_TOWN",
+      "offset": 1,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 77,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_OLDALE_TOWER_PART2",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 77,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_OLDALE_TOWER_PART2",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

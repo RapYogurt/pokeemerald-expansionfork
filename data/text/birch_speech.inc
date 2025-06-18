@@ -1,50 +1,52 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
+	.string "Hi! Look at my cool POKéMON!!\p"
 	.string "$"
 
 gText_Birch_Pokemon::
-	.string "This is what we call a “POKéMON.”\p"
+	.string "This little freak is called LOTAD”\p"
 	.string "\n"
 	.string "$"
 
 gText_Birch_MainSpeech::
-	.string "This world is widely inhabited by\n"
-	.string "creatures known as POKéMON.\p"
-	.string "We humans live alongside POKéMON,\n"
-	.string "at times as friendly playmates, and\l"
-	.string "at times as cooperative workmates.\p"
-	.string "And sometimes, we band together\n"
-	.string "and battle others like us.\p"
-	.string "But despite our closeness, we don't\n"
-	.string "know everything about POKéMON.\p"
-	.string "In fact, there are many, many\n"
-	.string "secrets surrounding POKéMON.\p"
-	.string "To unravel POKéMON mysteries,\n"
-	.string "I've been undertaking research.\l"
-	.string "That's what I do.\p"
+	.string "I boosted the base stats of probably\n"
+	.string "every single POKéMON, to even the field.\p"
+	.string "I changed tons of their abilities\n"
+	.string "and added new moves they can learn.\l"
+	.string "Also all evolutions are now possible.\p"
+	.string "It's worth noting that all 1025\n"
+	.string "POKéMON now have an attacking stat!\p"
+	.string "So you can use FORRETRESS or TOXAPEX\n"
+	.string "and not make your experience miserable.\p"
+	.string "I hope you can use your favorite.\n"
+	.string "POKéMON without worry for power!\p"
+	.string "There are Generations 1 through 9. and\n"
+	.string "a ton of bonus little changes for you!\p"
+	.string "I added a lot of hidden secrets, so I\n"
+	.string "hope you'll enjoy exploring the region!\p"
+	.string "There is something new in probably every\n"
+	.string "single area, and entirely new locations!\p"
+	.string "So whenever you reach a new place, have\n"
+	.string "a look around for what I left for you!\l"
+	.string "\l"
 	.string "$"
 
 gText_Birch_AndYouAre::
 	.string "And you are?$"
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "Do you wanna play as a BADDIE?\n"
+	.string "Or are you a CLOWN?$"
 
 gText_Birch_WhatsYourName::
 	.string "All right.\n"
-	.string "What's your name?$"
+	.string "What should we call you?$"
 
 gText_Birch_SoItsPlayer::
-	.string "So it's {PLAYER}{KUN}?$"
+	.string "So it's EUGENE?$"
 
 gText_Birch_YourePlayer::
 	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
+	.string "You're EUGENE who's moving to my\n"
 	.string "hometown of LITTLEROOT.\l"
 	.string "I get it now!\p"
 	.string "$"

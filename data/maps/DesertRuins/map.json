@@ -49,6 +49,13 @@
       "elevation": 3,
       "dest_map": "MAP_DESERT_RUINS",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 12,
+      "y": 29,
+      "elevation": 3,
+      "dest_map": "MAP_GRANITE_CAVE_B1F",
+      "dest_warp_id": "7"
     }
   ],
   "coord_events": [],
@@ -76,6 +83,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "DesertRuins_EventScript_CaveEntranceSide"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 24,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "GraniteCave_B1F_RegiSign"
     }
   ]
 }

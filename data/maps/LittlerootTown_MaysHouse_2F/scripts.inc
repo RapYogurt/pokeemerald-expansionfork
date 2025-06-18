@@ -86,6 +86,8 @@ LittlerootTown_MaysHouse_2F_EventScript_MeetMayNorth::
 	closemessage
 	applymovement LOCALID_PLAYER, LittlerootTown_MaysHouse_2F_Movement_PlayerWatchMayNorth
 	applymovement LOCALID_RIVALS_HOUSE_2F_RIVAL, LittlerootTown_MaysHouse_2F_Movement_MayWalkToPCNorth
+	msgbox RivalsHouse_2F_Text_AlmostCaught, MSGBOX_DEFAULT
+	closemessage
 	waitmovement 0
 	return
 
@@ -336,6 +338,12 @@ RivalsHouse_2F_Text_MayGettingReady:
 	.string "POKéMON fully restored!\n"
 	.string "Items ready, and…$"
 
+RivalsHouse_2F_Text_AlmostCaught:
+	.string "You: Almost nabbed it!\n"
+	.string "I was so close!\p"
+	.string "All those hours of Pokémon Colosseum wasted.\p"
+	.string "Maybe next time...\p"
+
 RivalsHouse_2F_Text_BrendanWhoAreYou:
 	.string "Hey!\n"
 	.string "You…\p"
@@ -361,8 +369,8 @@ RivalsHouse_2F_Text_BrendanGettingReady:
 	.string "Items all packed, and…$"
 
 RivalsHouse_2F_Text_ItsRivalsPokeBall:
-	.string "It's {RIVAL}'s POKé BALL!\p"
-	.string "Better leave it right where it is.$"
+	.string "It's a free POKé BALL!!!\p"
+	.string "Well don't mind if I do....$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
 	.string "MAY: {PLAYER}{KUN}!\p"

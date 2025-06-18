@@ -48,6 +48,13 @@
       "elevation": 0,
       "dest_map": "MAP_VICTORY_ROAD_1F",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 14,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN",
+      "dest_warp_id": "9"
     }
   ],
   "coord_events": [

@@ -176,7 +176,206 @@ PetalburgCity_Movement_WallyTutorialPlayer:
 	walk_right
 	walk_up
 	walk_up
-	walk_in_place_faster_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+			walk_down
+				walk_down
+					walk_down
+						walk_down
+							walk_down
+								walk_down
+										walk_right
+											walk_right
+												walk_right
+													walk_right
+														walk_right
+															walk_right
+																walk_right
+																	walk_right
+																		walk_right
+																			walk_right
+																				walk_right
+																					walk_right
+																						walk_right
+																							walk_right
+																								walk_right
+																									walk_right
+																										walk_right
+																											walk_right
+																												walk_right
+																													walk_right
+																														walk_right
+																															walk_right
+																																walk_right
+																																	walk_right
+																																		walk_right
+		walk_down
+			walk_down
+				walk_down
+					walk_down
+						walk_down
+							walk_down
+								walk_down
+									walk_down
+										walk_down
+											walk_down
+												walk_down
+													walk_down
+														walk_down
+															walk_down
+																walk_down
+																	walk_down
+																		walk_down
+																			walk_down
+																				walk_down
+																					walk_down
+		walk_down
+			walk_down
+				walk_down
+					walk_down
+						walk_down
+							walk_down
+								walk_down
+									walk_down
+										walk_down
+											walk_down
+												walk_down
+													walk_down
+														walk_down
+															walk_down
+																walk_down
+																	walk_down
+																		walk_down
+																			walk_down
+																				walk_down
+																					walk_down
+		walk_down
+			walk_down
+				walk_down
+					walk_down
+
+										walk_right
+											walk_right
+												walk_right
+													walk_right
+														walk_right
+															walk_right
+																walk_right
+																	walk_right
+																		walk_right
+																			walk_right
+																				walk_right
+																					walk_right
+																						walk_right
+																							walk_right
+																								walk_right
+																									walk_right
+																										walk_right
+																											walk_right
+																												walk_right
+																													walk_right
+																																							walk_right
+											walk_right
+												walk_right
+													walk_right
+														walk_right
+															walk_right
+																walk_right
+
+                                        walk_left
+                                            walk_left
+                                                walk_left
+                                                    walk_left
+                                                        walk_left
+                                                            walk_left
+                                                                walk_left
+                                                                    walk_left
+                                                                        walk_left
+                                                                            walk_left
+                                                                                walk_left
+                                                                                    walk_left
+                                                                                        walk_left
+                                                                                            walk_left
+                                                                                                walk_left
+                                                                                                    walk_left
+                                                                                                        walk_left
+                                                                                                            walk_left
+                                                                                                                walk_left
+                                                                                                                    walk_left
+                                                                                                                                                            walk_left
+                                            walk_left
+                                                walk_left
+                                                    walk_left
+                                                        walk_left
+                                                            walk_left
+                                                                walk_left
+        walk_up
+            walk_up
+                walk_up
+                    walk_up
+                        walk_up
+                            walk_up
+                                walk_up
+                                    walk_up
+                                        walk_up
+                                            walk_up
+                                                walk_up
+                                                    walk_up
+                                                        walk_up
+                                                            walk_up
+                                                                walk_up
+                                                                    walk_up
+                                                                        walk_up
+                                                                            walk_up
+                                                                                walk_up
+                                                                                    walk_up
+                                                                                walk_up
+															walk_right
+																walk_right
+																	walk_right
+																		walk_right
+																			walk_right
+																			walk_right
+
+walk_up
+            walk_up
+                walk_up
+                    walk_up
+                        walk_up
+                            walk_up
+                                walk_up
+                                    walk_up
+                                        walk_up
+	walk_in_place_faster_up
 	step_end
 
 PetalburgCity_Movement_WallyTutorialWally:
@@ -211,11 +410,209 @@ PetalburgCity_Movement_WallyTutorialWally:
 	walk_up
 	walk_up
 	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+			walk_down
+				walk_down
+					walk_down
+						walk_down
+							walk_down
+								walk_down
+										walk_right
+											walk_right
+												walk_right
+													walk_right
+														walk_right
+															walk_right
+																walk_right
+																	walk_right
+																		walk_right
+																			walk_right
+																				walk_right
+																					walk_right
+																						walk_right
+																							walk_right
+																								walk_right
+																									walk_right
+																										walk_right
+																											walk_right
+																												walk_right
+																													walk_right
+																														walk_right
+																															walk_right
+																																walk_right
+																																	walk_right
+																																		walk_right
+		walk_down
+			walk_down
+				walk_down
+					walk_down
+						walk_down
+							walk_down
+								walk_down
+									walk_down
+										walk_down
+											walk_down
+												walk_down
+													walk_down
+														walk_down
+															walk_down
+																walk_down
+																	walk_down
+																		walk_down
+																			walk_down
+																				walk_down
+																					walk_down
+		walk_down
+			walk_down
+				walk_down
+					walk_down
+						walk_down
+							walk_down
+								walk_down
+									walk_down
+										walk_down
+											walk_down
+												walk_down
+													walk_down
+														walk_down
+															walk_down
+																walk_down
+																	walk_down
+																		walk_down
+																			walk_down
+																				walk_down
+																					walk_down
+		walk_down
+			walk_down
+				walk_down
+					walk_down
+
+										walk_right
+											walk_right
+												walk_right
+													walk_right
+														walk_right
+															walk_right
+																walk_right
+																	walk_right
+																		walk_right
+																			walk_right
+																				walk_right
+																					walk_right
+																						walk_right
+																							walk_right
+																								walk_right
+																									walk_right
+																										walk_right
+																											walk_right
+																												walk_right
+																													walk_right
+																																							walk_right
+											walk_right
+												walk_right
+													walk_right
+														walk_right
+															walk_right
+																walk_right
+
+                                        walk_left
+                                            walk_left
+                                                walk_left
+                                                    walk_left
+                                                        walk_left
+                                                            walk_left
+                                                                walk_left
+                                                                    walk_left
+                                                                        walk_left
+                                                                            walk_left
+                                                                                walk_left
+                                                                                    walk_left
+                                                                                        walk_left
+                                                                                            walk_left
+                                                                                                walk_left
+                                                                                                    walk_left
+                                                                                                        walk_left
+                                                                                                            walk_left
+                                                                                                                walk_left
+                                                                                                                    walk_left
+                                                                                                                                                            walk_left
+                                            walk_left
+                                                walk_left
+                                                    walk_left
+                                                        walk_left
+                                                            walk_left
+                                                                walk_left
+        walk_up
+            walk_up
+                walk_up
+                    walk_up
+                        walk_up
+                            walk_up
+                                walk_up
+                                    walk_up
+                                        walk_up
+                                            walk_up
+                                                walk_up
+                                                    walk_up
+                                                        walk_up
+                                                            walk_up
+                                                                walk_up
+                                                                    walk_up
+                                                                        walk_up
+                                                                            walk_up
+                                                                                walk_up
+                                                                                    walk_up
+                                                                                walk_up
+															walk_right
+																walk_right
+																	walk_right
+																		walk_right
+																			walk_right
+																			walk_right
+walk_up
+            walk_up
+                walk_up
+                    walk_up
+                        walk_up
+                            walk_up
+                                walk_up
+                                    walk_up
+                                        walk_up
+                                            walk_up
 	delay_16
 	walk_in_place_faster_up
 	delay_16
 	delay_16
-	walk_in_place_faster_right
+	walk_in_place_faster_down
 	step_end
 
 PetalburgCity_EventScript_GymSign::
@@ -704,32 +1101,33 @@ PetalburgCity_Text_WhereIsWally:
 	.string "very soon…$"
 
 PetalburgCity_Text_AreYouRookieTrainer:
-	.string "Hiya! Are you maybe…\n"
-	.string "A rookie TRAINER?\p"
+	.string "WOAH! WOAH! WOAH! WOAH! WOAH!\n"
+	.string "Back it up pal.\p"
 	.string "Do you know what POKéMON TRAINERS\n"
 	.string "do when they reach a new town?\p"
-	.string "They first check what kind of GYM\n"
-	.string "is in the town.$"
+	.string "They first check whose running it,\n"
+	.string "so hop off my turf pal.$"
 
 PetalburgCity_Text_ThisIsPetalburgGym:
-	.string "See? This is PETALBURG CITY's GYM.$"
+	.string "This is the only place you'll be safe here.$"
 
 PetalburgCity_Text_ThisIsGymSign:
-	.string "This is the GYM's sign. Look for it\n"
-	.string "whenever you're looking for a GYM.$"
+	.string "Go cry to your daddy about it.\p"
+	.string "Don't try me again punk.$"
 
 PetalburgCity_Text_WaterReflection:
-	.string "My face is reflected in the water.\p"
-	.string "It's a shining grin full of hope…\p"
-	.string "Or it could be a look of somber silence\n"
-	.string "struggling with fear…\p"
-	.string "What do you see reflected in your face?$"
+	.string "YES!!! Another one!\p"
+	.string "Oh hey, what am I doing?\p"
+	.string "I'm fishing of course!\p"
+	.string "I just have to pretend a little\p"
+	.string "since my family is too poor\n"
+	.string "to afford an old rod...$"
 
 PetalburgCity_Text_FullPartyExplanation:
 	.string "Let's say you have six POKéMON.\n"
 	.string "If you catch another one…\p"
-	.string "It is automatically sent to a STORAGE\n"
-	.string "BOX over a PC connection.$"
+	.string "It is automatically sent to a BLENDER\n"
+	.string "and made into POTIONs!$"
 
 PetalburgCity_Text_GymSign:
 	.string "PETALBURG CITY POKéMON GYM\n"
@@ -745,17 +1143,17 @@ PetalburgCity_Text_WallyHouseSign:
 
 PetalburgCity_Text_AreYouATrainer:
 	.string "Excuse me!\p"
-	.string "Let me guess, from the way you're\n"
-	.string "dressed, are you a POKéMON TRAINER?$"
+	.string "Forgive my late introduction.\n"
+	.string "I'm looking for a TRAINER named Austin.$"
 
 PetalburgCity_Text_WellMaybeNot:
+	.string "Do you know where I can find him?\p"
 	.string "… … … … … …\p"
-	.string "Well, maybe not.\n"
-	.string "Your clothes aren't all that dirty.\p"
-	.string "You're either a rookie TRAINER,\n"
+	.string "Well, it seems not.\p"
+	.string "You're either a clueless TRAINER,\n"
 	.string "or maybe you're just an ordinary kid.$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
-	.string "talented TRAINERS.\p"
-	.string "I'm sorry to have taken your time.$"
+	.string "that TRAINER who wronged me.\p"
+	.string "I'm sorry to have attacked you.$"
