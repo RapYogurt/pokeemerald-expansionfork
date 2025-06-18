@@ -416,7 +416,7 @@
     },
     {
       "x": 59,
-      "y": 13,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_TERRA_CAVE_ENTRANCE",
       "dest_warp_id": "0"
@@ -501,13 +501,6 @@
       "y": 6,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_BLUE_CAVE3_2"
-    },
-    {
-      "type": "secret_base",
-      "x": 55,
-      "y": 15,
-      "elevation": 0,
-      "secret_base_id": "SECRET_BASE_BLUE_CAVE4_2"
     },
     {
       "type": "hidden_item",

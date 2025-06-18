@@ -1,0 +1,164 @@
+raw`PetalburgCity_Gym_SecretRoom_MapScripts::
+	.byte 0
+`
+mapscripts PetalburgCity_Gym_SecretRoom {}
+
+script PetalburgCity_Gym_SpeedRoomEventScript_PikachuBall{
+ 
+    lockall
+    showmonpic(SPECIES_PIKACHU_STARTER, 10,3)
+    msgbox("Do you want to choose Pikachu?\pThis Pokemon was abandoned due to it's\ninability to evolve...", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_PIKACHU_STARTER, 5, ITEM_LOVE_BALL)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("The Pikachu gave you a hug!")
+            msgbox("Recieved a Pikachu!")
+			removeobject(1)
+			removeobject(2)
+			removeobject(3)
+            setflag(FLAG_BALL_SIX)
+			setflag(FLAG_BALL_FOUR)
+			setflag(FLAG_BALL_FIVE)
+            call(NicknamePartyMon3)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved a Pikachu!")
+			removeobject(1)
+			removeobject(2)
+			removeobject(3)
+            setflag(FLAG_BALL_SIX)
+			setflag(FLAG_BALL_FOUR)
+			setflag(FLAG_BALL_FIVE)
+            call(NicknameBoxMon3)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(PetalburgCity_Gym_Pokemon_NotChosen)
+    }
+    waitmessage
+    releaseall
+    end
+ 
+}
+script PetalburgCity_Gym_SpeedRoom_EventScript_EeveeBall{
+ 
+    lockall
+    showmonpic(SPECIES_PIKACHU_STARTER, 10,3)
+    msgbox("Do you want to choose Pikachu?\pThis Pokemon was abandoned due to it's\ninability to evolve...", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_PIKACHU_STARTER, 5, ITEM_LOVE_BALL)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("The Pikachu gave you a hug!")
+            msgbox("Recieved a Pikachu!")
+			removeobject(1)
+			removeobject(2)
+			removeobject(3)
+            setflag(FLAG_BALL_SIX)
+			setflag(FLAG_BALL_FOUR)
+			setflag(FLAG_BALL_FIVE)
+            call(NicknamePartyMon3)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved a Pikachu!")
+			removeobject(1)
+			removeobject(2)
+			removeobject(3)
+            setflag(FLAG_BALL_SIX)
+			setflag(FLAG_BALL_FOUR)
+			setflag(FLAG_BALL_FIVE)
+            call(NicknameBoxMon3)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(PetalburgCity_Gym_Pokemon_NotChosen)
+    }
+    waitmessage
+    releaseall
+    end
+ 
+}script PetalburgCity_Gym_SpeedRoom_EventScript_CosmogBall{
+ 
+    lockall
+    showmonpic(SPECIES_PIKACHU_STARTER, 10,3)
+    msgbox("Do you want to choose Pikachu?\pThis Pokemon was abandoned due to it's\ninability to evolve...", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_PIKACHU_STARTER, 5, ITEM_LOVE_BALL)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("The Pikachu gave you a hug!")
+            msgbox("Recieved a Pikachu!")
+			removeobject(1)
+			removeobject(2)
+			removeobject(3)
+            setflag(FLAG_BALL_SIX)
+			setflag(FLAG_BALL_FOUR)
+			setflag(FLAG_BALL_FIVE)
+            call(NicknamePartyMon3)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved a Pikachu!")
+			removeobject(1)
+			removeobject(2)
+			removeobject(3)
+            setflag(FLAG_BALL_SIX)
+			setflag(FLAG_BALL_FOUR)
+			setflag(FLAG_BALL_FIVE)
+            call(NicknameBoxMon3)
+        }
+        else{
+            hidemonpic
+            msgbox("No More Room")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(PetalburgCity_Gym_Pokemon_NotChosen)
+    }
+    waitmessage
+    releaseall
+    end
+ 
+}
+
+script NicknamePartyMon3{
+ 
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_GetGiftMonPartySlot)
+        call(Common_EventScript_NameReceivedPartyMon)
+    }
+ 
+ 
+}
+ 
+script NicknameBoxMon3{
+ 
+    msgbox("Give it a nickname?", MSGBOX_YESNO)
+    hidemonpic
+    if(var(VAR_RESULT) == YES){
+        call(Common_EventScript_NameReceivedBoxMon)
+    }
+    call(Common_EventScript_TransferredToPC)
+ 
+}
+ 
+text PetalburgCity_Gym_Pokemon_NotChosen{
+    "It's ears droop in disappointment as it\nseems to have expected this."
+}
+

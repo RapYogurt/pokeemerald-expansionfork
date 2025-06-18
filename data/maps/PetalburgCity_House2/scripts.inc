@@ -17,8 +17,9 @@ PetalburgCity_House2_Text_NormanBecameGymLeader:
 
 PetalburgCity_House2_Text_BattledNormanOnce:
 	.string "I just lost my dog...\p"
-	.string "and my brother told me how to chase the bag.\p"
-	.string "Get right in the field,\n"
-	.string "I had to make a bag.\p"
-	.string "The day he lost his soul\n"
+	.string "And my brother told me how to chaaaase\p"
+	.string "the bag.\p"
+	.string "Get right in the field, I had to make\n"
+	.string "a bag.\p"
+	.string "The day he lost his soul,\n"
 	.string "wish I could take it back...$"

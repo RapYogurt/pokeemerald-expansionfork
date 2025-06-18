@@ -1117,11 +1117,10 @@ PetalburgCity_Text_ThisIsGymSign:
 
 PetalburgCity_Text_WaterReflection:
 	.string "YES!!! Another one!\p"
-	.string "Oh hey, what am I doing?\p"
+	.string "Oh hey, what am I doing?\n"
 	.string "I'm fishing of course!\p"
-	.string "I just have to pretend a little\p"
-	.string "since my family is too poor\n"
-	.string "to afford an old rod...$"
+	.string "I just have to pretend I'm fishing since\n"
+	.string "my family is too poor to afford a rod...$"
 
 PetalburgCity_Text_FullPartyExplanation:
 	.string "Let's say you have six POKéMON.\n"

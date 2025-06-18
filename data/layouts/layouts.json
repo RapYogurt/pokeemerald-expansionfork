@@ -4480,6 +4480,16 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/OldaleTowerPart2/border.bin",
       "blockdata_filepath": "data/layouts/OldaleTowerPart2/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_CITY_GYM_SECRET_ROOM",
+      "name": "PetalburgCity_Gym_SecretRoom_Layout",
+      "width": 9,
+      "height": 112,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PetalburgGym",
+      "border_filepath": "data/layouts/PetalburgCity_Gym_SecretRoom/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgCity_Gym_SecretRoom/map.bin"
     }
   ]
 }
