@@ -890,8 +890,9 @@ gText_PokemonCenterSign::
 	.string "POKéMON CENTER$"
 
 gText_MomOrDadMightLikeThisProgram::
-	.string "{STR_VAR_1} might like this program.\n"
-	.string "… … … … … … … … … … … … … … … …\p"
+	.string "Gotta finish watching the newest episode of\n"
+	.string "POKéMON SNAP! Lopunny's Pool Party!\n"
+	.string "… … … … … … … … … … … …\p"
 	.string "Better get going!$"
 
 gText_WhichFloorWouldYouLike::
@@ -907,13 +908,14 @@ gText_SelectWithoutRegisteredItem::
 	.string "registered to SELECT for easy use.$"
 
 gText_PokemonTrainerSchoolEmail::
-	.string "There's an e-mail from POKéMON TRAINER\n"
-	.string "SCHOOL.\p"
+	.string "There's an e-mail from a TRAINER\n"
+	.string "from POKéMON SCHOOL.\p"
 	.string "… … … … … …\p"
-	.string "A POKéMON may learn up to four moves.\p"
-	.string "A TRAINER's expertise is tested on the\n"
-	.string "move sets chosen for POKéMON.\p"
-	.string "… … … … … …$"
+	.string "Oh my love! Please don't go!\p"
+	.string "There's too much still to learn here!\n"
+	.string "I shall wait for you to meet me.\p"
+	.string "… … … … … …\n"
+	.string "What a freak...$"
 
 gText_PlayerHouseBootPC::
 	.string "{PLAYER} booted up the PC.$"

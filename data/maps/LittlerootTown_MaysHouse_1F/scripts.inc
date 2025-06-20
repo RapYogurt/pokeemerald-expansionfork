@@ -325,11 +325,13 @@ RivalsHouse_1F_Text_OhYoureTheNewNeighbor:
 	.string "… … … … … … … … …\p"
 	.string "Oh, you're {PLAYER}{KUN}, our new next-door\n"
 	.string "neighbor! Hi!\p"
-	.string "We have a {STR_VAR_1} about the same\n"
-	.string "age as you.\p"
-	.string "Our {STR_VAR_1} was excited about making\n"
-	.string "a new friend.\p"
-	.string "Our {STR_VAR_1} is upstairs, I think.$"
+	.string "I've alwaysss wanted a piece of fresh meat\n"
+	.string "like you around.\p"
+	.string "My husband left so long ago...\n"
+	.string "a girl gets lonely ya know?\p"
+	.string "Our {STR_VAR_1} is upstairs, I think.\p"
+	.string "But you should come back when know how\n"
+	.string "to ATTRACT a woman like me.$"
 
 RivalsHouse_1F_Text_LikeChildLikeFather:
 	.string "Like child, like father.\p"
@@ -404,5 +406,5 @@ RivalsHouse_1F_Text_BrendanWhoAreYou:
 
 RivalsHouse_1F_Text_DoYouHavePokemon:
 	.string "Hi, neighbor!\p"
-	.string "Do you already have your\n"
-	.string "own POKéMON?$"
+	.string "I think my mom has been wanting someone\n"
+	.string "to ATTRACT her, you should try!$"
