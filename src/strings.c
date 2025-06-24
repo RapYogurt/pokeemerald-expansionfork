@@ -1310,3 +1310,4 @@ const u8 gText_AlolaStarters[] = _("ALOLA");
 const u8 gText_GalarStarters[] = _("GALAR");
 const u8 gText_PaldeaStarters[] = _("PALDEA");
 
+const u8 gText_StatEditor[] = _("EDIT STATS");
