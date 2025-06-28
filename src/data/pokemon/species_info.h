@@ -175,6 +175,28 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .iconPalIndex = 1,
     },
 
+    +    [SPECIES_MEWTHREE] =
++    {
++       .baseHP        = 106,
++       .baseAttack    = 150,
++       .baseDefense   = 70,
++       .baseSpeed     = 140,
++       .baseSpAttack  = 194,
++       .baseSpDefense = 120,
++       .types = MON_TYPES(TYPE_PSYCHIC, TYPE_NORMAL)
++       .catchRate = 3,
++       .expYield = 255,
++       .evYield_SpAttack  = 3,
++       .genderRatio = MON_GENDERLESS,
++       .eggCycles = 120,
++       .friendship = 0,
++       .growthRate = GROWTH_SLOW,
++       .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
++       .abilities = { ABILITY_INSOMNIA, ABILITY_NONE, ABILITY_NONE },
++       .bodyColor = BODY_COLOR_PURPLE,
++    },
+ };
+
     /* You may add any custom species below this point based on the following structure: */
 
     /*

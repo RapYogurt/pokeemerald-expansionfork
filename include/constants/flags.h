@@ -50,10 +50,10 @@
 #define FLAG_BALL_FOUR    0x24 // First Secret Starter
 #define FLAG_BALL_FIVE    0x25 // Second Secret Starter
 #define FLAG_BALL_SIX    0x26 // Third Secret Starter
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
+#define FLAG_PETALBURG_ACCURACY_1    0x27 // Unused Flag
+#define FLAG_PETALBURG_ACCURACY_2    0x28 // Unused Flag
+#define FLAG_PETALBURG_SPEED_1    0x29 // Unused Flag
+#define FLAG_PETALBURG_SPEED_2    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag
@@ -515,8 +515,7 @@
 #define FLAG_SHOWN_MYSTIC_TICKET             0x1DB
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
-
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
+#define FLAG_DEFEATED_DUSKULL                                                   0x1DE // Unused Flag i stole it i stole it i stole it
 #define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
 #define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
 #define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag

@@ -3,34 +3,68 @@ raw`PetalburgCity_Gym_SecretRoom_MapScripts::
 `
 mapscripts PetalburgCity_Gym_SecretRoom {}
 
-script PetalburgCity_Gym_SpeedRoomEventScript_PikachuBall{
+script PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall{
  
     lockall
-    showmonpic(SPECIES_PIKACHU_STARTER, 10,3)
-    msgbox("Do you want to choose Pikachu?\pThis Pokemon was abandoned due to it's\ninability to evolve...", MSGBOX_YESNO)
+    showmonpic(SPECIES_IGGLYBUFF, 10,3)
+    msgbox("Do you want to choose IGGLYBUFF?\pThis Pokemon was trained to never\nmiss a move.", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_PIKACHU_STARTER, 5, ITEM_LOVE_BALL)
+        givemon(SPECIES_PIKACHU_STARTER, 5, ITEM_WIDE_LENS)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("The Pikachu gave you a hug!")
-            msgbox("Recieved a Pikachu!")
+            msgbox("Recieved the IGGLYBUFF!")
 			removeobject(1)
 			removeobject(2)
-			removeobject(3)
-            setflag(FLAG_BALL_SIX)
-			setflag(FLAG_BALL_FOUR)
-			setflag(FLAG_BALL_FIVE)
+            setflag(FLAG_PETALBURG_ACCURACY_1)
+			setflag(FLAG_PETALBURG_ACCURACY_2)
             call(NicknamePartyMon3)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Recieved a Pikachu!")
+            msgbox("Recieved the IGGLYBUFF!")
 			removeobject(1)
 			removeobject(2)
+            setflag(FLAG_PETALBURG_ACCURACY_1)
+			setflag(FLAG_PETALBURG_ACCURACY_2)
+            call(NicknameBoxMon3)
+        }
+        else{
+            hidemonpic
+            msgbox("No more room!")
+        }
+    }
+    else{
+        hidemonpic
+        msgbox(PetalburgCity_Gym_Pokemon_NotChosen)
+    }
+    waitmessage
+    releaseall
+    end
+ }
+
+script PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall{
+ 
+    lockall
+    showmonpic(SPECIES_DROWZEE, 10,3)
+    msgbox("Do you want to choose DROWZEE?\pThis Pokemon was trained to never\nmiss a move.", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        givemon(SPECIES_DROWZEE, 5, ITEM_WIDE_LENS)
+        if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved the DROWZEE!")
 			removeobject(3)
-            setflag(FLAG_BALL_SIX)
-			setflag(FLAG_BALL_FOUR)
-			setflag(FLAG_BALL_FIVE)
+			removeobject(4)
+            setflag(FLAG_PETALBURG_ACCURACY_1)
+			setflag(FLAG_PETALBURG_ACCURACY_2)
+            call(NicknamePartyMon3)
+        }
+        elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox("Recieved the DROWZEE")
+			removeobject(3)
+			removeobject(4)
+            setflag(FLAG_PETALBURG_ACCURACY_1)
+			setflag(FLAG_PETALBURG_ACCURACY_2)
             call(NicknameBoxMon3)
         }
         else{
@@ -45,36 +79,30 @@ script PetalburgCity_Gym_SpeedRoomEventScript_PikachuBall{
     waitmessage
     releaseall
     end
- 
-}
-script PetalburgCity_Gym_SpeedRoom_EventScript_EeveeBall{
+ }
+
+script PetalburgCity_Gym_SpeedRoomEventScript_ParasBall{
  
     lockall
-    showmonpic(SPECIES_PIKACHU_STARTER, 10,3)
-    msgbox("Do you want to choose Pikachu?\pThis Pokemon was abandoned due to it's\ninability to evolve...", MSGBOX_YESNO)
+    showmonpic(SPECIES_PARAS, 10,3)
+    msgbox("Do you want to choose PARAS?\pThis Pokemon was trained to always\nmove first.", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_PIKACHU_STARTER, 5, ITEM_LOVE_BALL)
+        givemon(SPECIES_PARAS, 5, ITEM_QUICK_CLAW)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("The Pikachu gave you a hug!")
-            msgbox("Recieved a Pikachu!")
+            msgbox("Recieved the PARAS!")
 			removeobject(1)
 			removeobject(2)
-			removeobject(3)
-            setflag(FLAG_BALL_SIX)
-			setflag(FLAG_BALL_FOUR)
-			setflag(FLAG_BALL_FIVE)
+            setflag(FLAG_PETALBURG_SPEED_1)
+			setflag(FLAG_PETALBURG_SPEED_2)
             call(NicknamePartyMon3)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Recieved a Pikachu!")
 			removeobject(1)
 			removeobject(2)
-			removeobject(3)
-            setflag(FLAG_BALL_SIX)
-			setflag(FLAG_BALL_FOUR)
-			setflag(FLAG_BALL_FIVE)
+            setflag(FLAG_PETALBURG_SPEED_1)
+			setflag(FLAG_PETALBURG_SPEED_2)
             call(NicknameBoxMon3)
         }
         else{
@@ -89,35 +117,31 @@ script PetalburgCity_Gym_SpeedRoom_EventScript_EeveeBall{
     waitmessage
     releaseall
     end
- 
-}script PetalburgCity_Gym_SpeedRoom_EventScript_CosmogBall{
+ }
+
+script PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall{
  
     lockall
-    showmonpic(SPECIES_PIKACHU_STARTER, 10,3)
-    msgbox("Do you want to choose Pikachu?\pThis Pokemon was abandoned due to it's\ninability to evolve...", MSGBOX_YESNO)
+    showmonpic(SPECIES_MANTYKE, 10,3)
+    msgbox("Do you want to choose MANTYKE?\pThis Pokemon was trained to always\nmove first.", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_PIKACHU_STARTER, 5, ITEM_LOVE_BALL)
+        givemon(SPECIES_MANTYKE, 5, ITEM_QUICK_CLAW)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("The Pikachu gave you a hug!")
-            msgbox("Recieved a Pikachu!")
+            msgbox("Recieved the MANTYKE!")
 			removeobject(1)
 			removeobject(2)
-			removeobject(3)
-            setflag(FLAG_BALL_SIX)
-			setflag(FLAG_BALL_FOUR)
-			setflag(FLAG_BALL_FIVE)
+            setflag(FLAG_PETALBURG_SPEED_1)
+			setflag(FLAG_PETALBURG_SPEED_2)
             call(NicknamePartyMon3)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
             playfanfare(MUS_OBTAIN_ITEM)
-            msgbox("Recieved a Pikachu!")
+            msgbox("Recieved the MANTYKE")
 			removeobject(1)
 			removeobject(2)
-			removeobject(3)
-            setflag(FLAG_BALL_SIX)
-			setflag(FLAG_BALL_FOUR)
-			setflag(FLAG_BALL_FIVE)
+            setflag(FLAG_PETALBURG_SPEED_1)
+			setflag(FLAG_PETALBURG_SPEED_2)
             call(NicknameBoxMon3)
         }
         else{
@@ -132,8 +156,11 @@ script PetalburgCity_Gym_SpeedRoom_EventScript_EeveeBall{
     waitmessage
     releaseall
     end
- 
-}
+ }
+
+
+
+
 
 script NicknamePartyMon3{
  
@@ -159,6 +186,6 @@ script NicknameBoxMon3{
 }
  
 text PetalburgCity_Gym_Pokemon_NotChosen{
-    "It's ears droop in disappointment as it\nseems to have expected this."
+    "Better to leave it where it is."
 }
 

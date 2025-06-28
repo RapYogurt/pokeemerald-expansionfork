@@ -24,8 +24,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgCity_Gym_SpeedRoomEventScript_PikachuBall",
-      "flag": "0"
+      "script": "PetalburgCity_Gym_SpeedRoomEventScript_ParasBall",
+      "flag": "FLAG_PETALBURG_SPEED_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -37,8 +37,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgCity_Gym_SpeedRoom_EventScript_CosmogBall",
-      "flag": "0"
+      "script": "PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall",
+      "flag": "FLAG_PETALBURG_SPEED_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -50,8 +50,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgCity_Gym_SpeedRoomEventScript_PikachuBall",
-      "flag": "0"
+      "script": "PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall",
+      "flag": "FLAG_PETALBURG_ACCURACY_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
@@ -63,8 +63,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PetalburgCity_Gym_SpeedRoom_EventScript_EeveeBall",
-      "flag": "0"
+      "script": "PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall",
+      "flag": "FLAG_PETALBURG_ACCURACY_2"
     }
   ],
   "warp_events": [
@@ -73,28 +73,28 @@
       "y": 98,
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_CITY_GYM",
-      "dest_warp_id": "38"
+      "dest_warp_id": "39"
     },
     {
       "x": 6,
       "y": 98,
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_CITY_GYM",
-      "dest_warp_id": "38"
+      "dest_warp_id": "39"
     },
     {
       "x": 2,
       "y": 85,
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_CITY_GYM",
-      "dest_warp_id": "2"
+      "dest_warp_id": "38"
     },
     {
       "x": 1,
       "y": 85,
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_CITY_GYM",
-      "dest_warp_id": "2"
+      "dest_warp_id": "38"
     }
   ],
   "coord_events": [],

@@ -1595,7 +1595,7 @@ mapscripts PetalburgCity_Gym{
     
 }
 
-script PetaburgCity_Gym_Sign_YesNoSpeedRoom{
+script PetalburgCity_Gym_Sign_YesNoSpeedRoom{
     lockall
     msgbox("Sneak in the SPEED room?\nIf you enter, the other door will lock.", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
@@ -1607,7 +1607,9 @@ script PetaburgCity_Gym_Sign_YesNoSpeedRoom{
     releaseall
     end
 }
-script PetaburgCity_Gym_Sign_YesNoAccuracyRoom{
+
+
+script PetalburgCity_Gym_Sign_YesNoAccuracyRoom{
     lockall
     msgbox("Sneak in the ACCURACY room?\nIf you enter, the other door lock.", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){

@@ -1786,7 +1786,7 @@ void CalculateMonStats(struct Pokemon *mon)
 
     SetMonData(mon, MON_DATA_LEVEL, &level);
 
-    if (species == SPECIES_SHEDINJA)
+ if (species == SPECIES_SHEDINJA)
     {
         newMaxHP = 1;
     }
@@ -1794,6 +1794,13 @@ void CalculateMonStats(struct Pokemon *mon)
     {
         s32 n = 2 * gSpeciesInfo[species].baseHP + hpIV;
         newMaxHP = (((n + hpEV / 4) * level) / 100) + level + 10;
+
+        if (IsMonShiny(mon) == TRUE)
+        {
+            newMaxHP = newMaxHP * 1.25; // Changing higher than 1.4 causes Max IV-EV Shiny Blisseys HP to exceed 999
+            if (newMaxHP >= 999) // this caps all mons Max HP at 999 so feel free to adjust the 1.25 above to something way higher if you want..
+                newMaxHP = 999;
+        }
     }
 
     gBattleScripting.levelUpHP = newMaxHP - oldMaxHP;

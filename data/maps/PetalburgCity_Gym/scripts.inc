@@ -3183,64 +3183,64 @@ PetalburgCity_Gym::
 	.byte 0
 
 
-PetaburgCity_Gym_Sign_YesNoSpeedRoom::
+PetalburgCity_Gym_Sign_YesNoSpeedRoom::
 # 1599 "data/maps/PetalburgCity_Gym/scripts.pory"
 	lockall
 # 1600 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetaburgCity_Gym_Sign_YesNoSpeedRoom_Text_0, MSGBOX_YESNO
+	msgbox PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_0, MSGBOX_YESNO
 # 1601 "data/maps/PetalburgCity_Gym/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_eq PetaburgCity_Gym_Sign_YesNoSpeedRoom_2
+	goto_if_eq PetalburgCity_Gym_Sign_YesNoSpeedRoom_2
 # 1605 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetaburgCity_Gym_Sign_YesNoSpeedRoom_Text_2
-PetaburgCity_Gym_Sign_YesNoSpeedRoom_1:
+	msgbox PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_2
+PetalburgCity_Gym_Sign_YesNoSpeedRoom_1:
 # 1607 "data/maps/PetalburgCity_Gym/scripts.pory"
 	releaseall
 	end
 
-PetaburgCity_Gym_Sign_YesNoSpeedRoom_2:
+PetalburgCity_Gym_Sign_YesNoSpeedRoom_2:
 # 1602 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetaburgCity_Gym_Sign_YesNoSpeedRoom_Text_1
+	msgbox PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_1
 # 1603 "data/maps/PetalburgCity_Gym/scripts.pory"
 	warp MAP_PETALBURG_CITY_GYM_SECRET_ROOM, 1, 85
-	goto PetaburgCity_Gym_Sign_YesNoSpeedRoom_1
+	goto PetalburgCity_Gym_Sign_YesNoSpeedRoom_1
 
 
-PetaburgCity_Gym_Sign_YesNoAccuracyRoom::
-# 1611 "data/maps/PetalburgCity_Gym/scripts.pory"
-	lockall
-# 1612 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetaburgCity_Gym_Sign_YesNoAccuracyRoom_Text_0, MSGBOX_YESNO
+PetalburgCity_Gym_Sign_YesNoAccuracyRoom::
 # 1613 "data/maps/PetalburgCity_Gym/scripts.pory"
+	lockall
+# 1614 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_Sign_YesNoAccuracyRoom_Text_0, MSGBOX_YESNO
+# 1615 "data/maps/PetalburgCity_Gym/scripts.pory"
 	compare VAR_RESULT, YES
-	goto_if_eq PetaburgCity_Gym_Sign_YesNoAccuracyRoom_2
-# 1617 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetaburgCity_Gym_Sign_YesNoSpeedRoom_Text_2
-PetaburgCity_Gym_Sign_YesNoAccuracyRoom_1:
+	goto_if_eq PetalburgCity_Gym_Sign_YesNoAccuracyRoom_2
 # 1619 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_2
+PetalburgCity_Gym_Sign_YesNoAccuracyRoom_1:
+# 1621 "data/maps/PetalburgCity_Gym/scripts.pory"
 	releaseall
 	end
 
-PetaburgCity_Gym_Sign_YesNoAccuracyRoom_2:
-# 1614 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetaburgCity_Gym_Sign_YesNoSpeedRoom_Text_1
-# 1615 "data/maps/PetalburgCity_Gym/scripts.pory"
+PetalburgCity_Gym_Sign_YesNoAccuracyRoom_2:
+# 1616 "data/maps/PetalburgCity_Gym/scripts.pory"
+	msgbox PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_1
+# 1617 "data/maps/PetalburgCity_Gym/scripts.pory"
 	warp MAP_PETALBURG_CITY_GYM_SECRET_ROOM, 7, 98
-	goto PetaburgCity_Gym_Sign_YesNoAccuracyRoom_1
+	goto PetalburgCity_Gym_Sign_YesNoAccuracyRoom_1
 
 
-PetaburgCity_Gym_Sign_YesNoSpeedRoom_Text_0:
+PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_0:
 # 1600 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Sneak in the SPEED room?\nIf you enter, the other door will lock.$"
 
-PetaburgCity_Gym_Sign_YesNoSpeedRoom_Text_1:
+PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_1:
 # 1602 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Alright, let's go!$"
 
-PetaburgCity_Gym_Sign_YesNoSpeedRoom_Text_2:
+PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_2:
 # 1605 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Sneaking is for naughty dogs!$"
 
-PetaburgCity_Gym_Sign_YesNoAccuracyRoom_Text_0:
-# 1612 "data/maps/PetalburgCity_Gym/scripts.pory"
+PetalburgCity_Gym_Sign_YesNoAccuracyRoom_Text_0:
+# 1614 "data/maps/PetalburgCity_Gym/scripts.pory"
 	.string "Sneak in the ACCURACY room?\nIf you enter, the other door lock.$"
