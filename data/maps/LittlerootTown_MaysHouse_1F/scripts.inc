@@ -325,10 +325,10 @@ RivalsHouse_1F_Text_OhYoureTheNewNeighbor:
 	.string "… … … … … … … … …\p"
 	.string "Oh, you're {PLAYER}{KUN}, our new next-door\n"
 	.string "neighbor! Hi!\p"
-	.string "I've alwaysss wanted a piece of fresh meat\n"
-	.string "like you around.\p"
+	.string "I've alwaysss wanted a piece of meat\n"
+	.string "like you around here...\p"
 	.string "My husband left so long ago...\n"
-	.string "a girl gets lonely ya know?\p"
+	.string "A girl like me gets lonely ya know?\p"
 	.string "Our {STR_VAR_1} is upstairs, I think.\p"
 	.string "But you should come back when know how\n"
 	.string "to ATTRACT a woman like me.$"
@@ -337,14 +337,16 @@ RivalsHouse_1F_Text_LikeChildLikeFather:
 	.string "Like child, like father.\p"
 	.string "My husband is as wild about POKéMON\n"
 	.string "as our child.\p"
-	.string "If he's not at his LAB, he's likely\n"
-	.string "scrabbling about in grassy places.$"
+	.string "If only there was someone who could\n"
+	.string "ATTRACT me, I'd do A-N-Y-T-H-I-N-G.$"
 
 RivalsHouse_1F_Text_TooBusyToNoticeVisit:
 	.string "That {RIVAL}!\p"
 	.string "I guess our child is too busy with\n"
 	.string "POKéMON to notice that you came\l"
-	.string "to visit, {PLAYER}{KUN}.$"
+	.string "to visit, {PLAYER}{KUN}.\n"
+	.string "I guess that means I have you\n"
+	.string "all to myself today, {PLAYER}{KUN}.$"
 
 RivalsHouse_1F_Text_WentOutToRoute103:
 	.string "Oh, {RIVAL} went out to ROUTE 103\n"

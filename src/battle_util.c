@@ -4149,7 +4149,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                  && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
                 {
                     BattleScriptPushCursorAndCallback(BattleScript_IceBodyHeal);
-                    gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 16;
+                    gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 8;
                     if (gBattleStruct->moveDamage[battler] == 0)
                         gBattleStruct->moveDamage[battler] = 1;
                     gBattleStruct->moveDamage[battler] *= -1;
@@ -4166,7 +4166,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                  && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
                 {
                     BattleScriptPushCursorAndCallback(BattleScript_RainDishActivates);
-                    gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / (gLastUsedAbility == ABILITY_RAIN_DISH ? 16 : 8);
+                    gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / (gLastUsedAbility == ABILITY_RAIN_DISH ? 8 : 8);
                     if (gBattleStruct->moveDamage[battler] == 0)
                         gBattleStruct->moveDamage[battler] = 1;
                     gBattleStruct->moveDamage[battler] *= -1;
@@ -9902,12 +9902,12 @@ s32 GetStealthHazardDamageByTypesAndHP(enum TypeSideHazard hazardType, u8 type1,
             dmg = 1;
         break;
     case UQ_4_12(2.0):
-        dmg = maxHp / 4;
+        dmg = maxHp / 6;
         if (dmg == 0)
             dmg = 1;
         break;
     case UQ_4_12(4.0):
-        dmg = maxHp / 2;
+        dmg = maxHp / 4;
         if (dmg == 0)
             dmg = 1;
         break;
