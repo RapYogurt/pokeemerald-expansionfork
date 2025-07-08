@@ -1175,3 +1175,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/OldaleTowerPart2/scripts.inc"
 
 	.include "data/maps/PetalburgCity_Gym_SecretRoom/scripts.inc"
+
+	.include "data/maps/PorytilesTutorialMap/scripts.inc"
