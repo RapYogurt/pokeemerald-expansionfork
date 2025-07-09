@@ -288,11 +288,9 @@ PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
 
 PlayersHouse_2F_Text_Notebook:
 	.string "{PLAYER} flipped open the notebook.\p"
-	.string "ADVENTURE RULE NO. 1\n"
-	.string "Open the MENU with START.\p"
-	.string "ADVENTURE RULE NO. 2\n"
-	.string "Record your progress with SAVE.\p"
-	.string "The remaining pages are blank…$"
+	.string "It's a Japanese comic...\n"
+	.string "No matter how many pages you flip through\n"
+	.string "It's just pictures of boys kissing...$"
 
 Common_Text_LookCloserAtMap:
 	.string "{PLAYER} took a closer look at the\n"

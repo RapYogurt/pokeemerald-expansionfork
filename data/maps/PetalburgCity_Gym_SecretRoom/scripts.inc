@@ -30,7 +30,7 @@ PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_1:
 
 PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_2:
 # 12 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	givemon SPECIES_PIKACHU_STARTER, 5, ITEM_WIDE_LENS
+	givemon SPECIES_IGGLYBUFF, 5, ITEM_WIDE_LENS
 # 13 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_5

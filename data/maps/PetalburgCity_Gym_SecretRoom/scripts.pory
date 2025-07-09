@@ -9,7 +9,7 @@ script PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall{
     showmonpic(SPECIES_IGGLYBUFF, 10,3)
     msgbox("Do you want to choose IGGLYBUFF?\pThis Pokemon was trained to never\nmiss a move.", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_PIKACHU_STARTER, 5, ITEM_WIDE_LENS)
+        givemon(SPECIES_IGGLYBUFF, 5, ITEM_WIDE_LENS)
         if(var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox("Recieved the IGGLYBUFF!")
