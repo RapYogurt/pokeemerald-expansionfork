@@ -1597,12 +1597,12 @@ mapscripts PetalburgCity_Gym{
 
 script PetalburgCity_Gym_Sign_YesNoSpeedRoom{
     lockall
-    msgbox("Sneak in the SPEED room?\nIf you enter, the other door will lock.", MSGBOX_YESNO)
+    msgbox("Sneak into the SPEED room?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         msgbox("Alright, let's go!")
 		warp (MAP_PETALBURG_CITY_GYM_SECRET_ROOM, 1, 85)
     } else {
-        msgbox("Sneaking is for naughty dogs!")
+        msgbox("DAD Probably wouldn't like that...!")
     }
     releaseall
     end
@@ -1611,13 +1611,18 @@ script PetalburgCity_Gym_Sign_YesNoSpeedRoom{
 
 script PetalburgCity_Gym_Sign_YesNoAccuracyRoom{
     lockall
-    msgbox("Sneak in the ACCURACY room?\nIf you enter, the other door lock.", MSGBOX_YESNO)
+    msgbox("Sneak into the ACCURACY room?", MSGBOX_YESNO)
     if(var(VAR_RESULT) == YES){
         msgbox("Alright, let's go!")
 		warp (MAP_PETALBURG_CITY_GYM_SECRET_ROOM, 7, 98)
     } else {
-        msgbox("Sneaking is for naughty dogs!")
+        msgbox("DAD Probably wouldn't like that...")
     }
     releaseall
     end
 }
+
+//script PetalurgCity_Gym_Teach_Quests{
+
+//	questmenu QUEST_MENU_SET_ACTIVE QUEST_INFINITY_STONES
+//     }

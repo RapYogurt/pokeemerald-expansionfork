@@ -17,6 +17,7 @@ script PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall{
 			removeobject(2)
             setflag(FLAG_PETALBURG_ACCURACY_1)
 			setflag(FLAG_PETALBURG_ACCURACY_2)
+            setflag(FLAG_PETALBURG_RECEIVED_POKEMON)
             call(NicknamePartyMon3)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
@@ -26,6 +27,7 @@ script PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall{
 			removeobject(2)
             setflag(FLAG_PETALBURG_ACCURACY_1)
 			setflag(FLAG_PETALBURG_ACCURACY_2)
+            setflag(FLAG_PETALBURG_RECEIVED_POKEMON)
             call(NicknameBoxMon3)
         }
         else{
@@ -56,6 +58,7 @@ script PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall{
 			removeobject(4)
             setflag(FLAG_PETALBURG_ACCURACY_1)
 			setflag(FLAG_PETALBURG_ACCURACY_2)
+            setflag(FLAG_PETALBURG_RECEIVED_POKEMON)
             call(NicknamePartyMon3)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
@@ -65,6 +68,7 @@ script PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall{
 			removeobject(4)
             setflag(FLAG_PETALBURG_ACCURACY_1)
 			setflag(FLAG_PETALBURG_ACCURACY_2)
+            setflag(FLAG_PETALBURG_RECEIVED_POKEMON)
             call(NicknameBoxMon3)
         }
         else{
@@ -95,6 +99,7 @@ script PetalburgCity_Gym_SpeedRoomEventScript_ParasBall{
 			removeobject(2)
             setflag(FLAG_PETALBURG_SPEED_1)
 			setflag(FLAG_PETALBURG_SPEED_2)
+            setflag(FLAG_PETALBURG_RECEIVED_POKEMON)
             call(NicknamePartyMon3)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
@@ -103,6 +108,7 @@ script PetalburgCity_Gym_SpeedRoomEventScript_ParasBall{
 			removeobject(2)
             setflag(FLAG_PETALBURG_SPEED_1)
 			setflag(FLAG_PETALBURG_SPEED_2)
+            setflag(FLAG_PETALBURG_RECEIVED_POKEMON)
             call(NicknameBoxMon3)
         }
         else{
@@ -133,6 +139,7 @@ script PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall{
 			removeobject(2)
             setflag(FLAG_PETALBURG_SPEED_1)
 			setflag(FLAG_PETALBURG_SPEED_2)
+            setflag(FLAG_PETALBURG_RECEIVED_POKEMON)
             call(NicknamePartyMon3)
         }
         elif(var(VAR_RESULT) == MON_GIVEN_TO_PC){
@@ -142,6 +149,7 @@ script PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall{
 			removeobject(2)
             setflag(FLAG_PETALBURG_SPEED_1)
 			setflag(FLAG_PETALBURG_SPEED_2)
+            setflag(FLAG_PETALBURG_RECEIVED_POKEMON)
             call(NicknameBoxMon3)
         }
         else{
@@ -189,3 +197,12 @@ text PetalburgCity_Gym_Pokemon_NotChosen{
     "Better to leave it where it is."
 }
 
+script PetalburgCityGym_SecretRoom_EnterSecretRoom{
+ 
+    msgbox("A chill runs down your spine.\nYou feel like you shouldn't be here.\pYou know that if you steal a POKÉMON,\nboth rooms will lock when you leave.")
+    setvar (VAR_PETALBURG_SECRET_ROOM_ENTERED, 1)
+    waitmessage
+    releaseall
+    end
+
+}

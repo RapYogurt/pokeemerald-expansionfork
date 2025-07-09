@@ -17,14 +17,14 @@ PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall::
 # 11 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_2
-# 37 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 39 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	hidemonpic
-# 38 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 40 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox PetalburgCity_Gym_Pokemon_NotChosen
 PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_1:
-# 40 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 42 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	waitmessage
-# 41 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 43 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	releaseall
 	end
 
@@ -34,12 +34,12 @@ PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_2:
 # 13 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_5
-# 22 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 23 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_6
-# 32 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 34 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	hidemonpic
-# 33 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 35 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_Text_2
 	goto PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_1
 
@@ -57,273 +57,301 @@ PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_5:
 # 19 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	setflag FLAG_PETALBURG_ACCURACY_2
 # 20 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_RECEIVED_POKEMON
+# 21 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	call NicknamePartyMon3
 	goto PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_1
 
 PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_6:
-# 23 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 24 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	msgbox PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_Text_1
+	playfanfare MUS_OBTAIN_ITEM
 # 25 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	removeobject 1
+	msgbox PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_Text_1
 # 26 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	removeobject 2
+	removeobject 1
 # 27 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	setflag FLAG_PETALBURG_ACCURACY_1
+	removeobject 2
 # 28 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	setflag FLAG_PETALBURG_ACCURACY_2
+	setflag FLAG_PETALBURG_ACCURACY_1
 # 29 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_ACCURACY_2
+# 30 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_RECEIVED_POKEMON
+# 31 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	call NicknameBoxMon3
 	goto PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_1
 
 
 PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall::
-# 47 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	lockall
-# 48 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	showmonpic SPECIES_DROWZEE, 10, 3
 # 49 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	msgbox PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_0, MSGBOX_YESNO
+	lockall
 # 50 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	showmonpic SPECIES_DROWZEE, 10, 3
+# 51 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	msgbox PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_0, MSGBOX_YESNO
+# 52 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_2
-# 76 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 80 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	hidemonpic
-# 77 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 81 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox PetalburgCity_Gym_Pokemon_NotChosen
 PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_1:
-# 79 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 83 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	waitmessage
-# 80 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 84 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_2:
-# 51 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 53 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	givemon SPECIES_DROWZEE, 5, ITEM_WIDE_LENS
-# 52 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 54 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_5
-# 61 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 64 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_6
-# 71 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 75 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	hidemonpic
-# 72 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 76 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_3
 	goto PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_1
 
 PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_5:
-# 53 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 54 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	msgbox PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_1
 # 55 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	removeobject 3
+	playfanfare MUS_OBTAIN_ITEM
 # 56 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	removeobject 4
+	msgbox PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_1
 # 57 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	setflag FLAG_PETALBURG_ACCURACY_1
+	removeobject 3
 # 58 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	setflag FLAG_PETALBURG_ACCURACY_2
+	removeobject 4
 # 59 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_ACCURACY_1
+# 60 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_ACCURACY_2
+# 61 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_RECEIVED_POKEMON
+# 62 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	call NicknamePartyMon3
 	goto PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_1
 
 PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_6:
-# 62 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 63 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	msgbox PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_2
-# 64 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	removeobject 3
 # 65 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	removeobject 4
+	playfanfare MUS_OBTAIN_ITEM
 # 66 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	setflag FLAG_PETALBURG_ACCURACY_1
+	msgbox PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_2
 # 67 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	setflag FLAG_PETALBURG_ACCURACY_2
+	removeobject 3
 # 68 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	removeobject 4
+# 69 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_ACCURACY_1
+# 70 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_ACCURACY_2
+# 71 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_RECEIVED_POKEMON
+# 72 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	call NicknameBoxMon3
 	goto PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_1
 
 
 PetalburgCity_Gym_SpeedRoomEventScript_ParasBall::
-# 86 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 90 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	lockall
-# 87 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 91 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	showmonpic SPECIES_PARAS, 10, 3
-# 88 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 92 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_Text_0, MSGBOX_YESNO
-# 89 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 93 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_2
-# 114 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 120 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	hidemonpic
-# 115 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 121 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox PetalburgCity_Gym_Pokemon_NotChosen
 PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_1:
-# 117 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 123 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	waitmessage
-# 118 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 124 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_2:
-# 90 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 94 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	givemon SPECIES_PARAS, 5, ITEM_QUICK_CLAW
-# 91 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 95 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_5
-# 100 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 105 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_6
-# 109 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 115 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	hidemonpic
-# 110 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 116 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_3
 	goto PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_1
 
 PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_5:
-# 92 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 93 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	msgbox PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_Text_1
-# 94 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	removeobject 1
-# 95 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	removeobject 2
 # 96 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	setflag FLAG_PETALBURG_SPEED_1
+	playfanfare MUS_OBTAIN_ITEM
 # 97 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	setflag FLAG_PETALBURG_SPEED_2
+	msgbox PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_Text_1
 # 98 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	removeobject 1
+# 99 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	removeobject 2
+# 100 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_SPEED_1
+# 101 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_SPEED_2
+# 102 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_RECEIVED_POKEMON
+# 103 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	call NicknamePartyMon3
 	goto PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_1
 
 PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_6:
-# 101 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 102 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	removeobject 1
-# 103 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	removeobject 2
-# 104 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	setflag FLAG_PETALBURG_SPEED_1
-# 105 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	setflag FLAG_PETALBURG_SPEED_2
 # 106 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 107 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	removeobject 1
+# 108 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	removeobject 2
+# 109 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_SPEED_1
+# 110 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_SPEED_2
+# 111 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_RECEIVED_POKEMON
+# 112 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	call NicknameBoxMon3
 	goto PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_1
 
 
 PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall::
-# 124 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 130 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	lockall
-# 125 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 131 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	showmonpic SPECIES_MANTYKE, 10, 3
-# 126 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 132 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_Text_0, MSGBOX_YESNO
-# 127 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 133 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_2
-# 153 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 161 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	hidemonpic
-# 154 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 162 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox PetalburgCity_Gym_Pokemon_NotChosen
 PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_1:
-# 156 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 164 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	waitmessage
-# 157 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 165 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	releaseall
 	end
 
 PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_2:
-# 128 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 134 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	givemon SPECIES_MANTYKE, 5, ITEM_QUICK_CLAW
-# 129 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 135 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_5
-# 138 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 145 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_6
-# 148 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 156 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	hidemonpic
-# 149 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 157 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_3
 	goto PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_1
 
 PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_5:
-# 130 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
-# 131 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	msgbox PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_Text_1
-# 132 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	removeobject 1
-# 133 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	removeobject 2
-# 134 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	setflag FLAG_PETALBURG_SPEED_1
-# 135 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
-	setflag FLAG_PETALBURG_SPEED_2
 # 136 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 137 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	msgbox PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_Text_1
+# 138 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	removeobject 1
+# 139 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	removeobject 2
+# 140 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_SPEED_1
+# 141 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_SPEED_2
+# 142 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_RECEIVED_POKEMON
+# 143 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	call NicknamePartyMon3
 	goto PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_1
 
 PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_6:
-# 139 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 146 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 140 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 147 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_Text_2
-# 141 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 148 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	removeobject 1
-# 142 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 149 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	removeobject 2
-# 143 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 150 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	setflag FLAG_PETALBURG_SPEED_1
-# 144 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 151 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	setflag FLAG_PETALBURG_SPEED_2
-# 145 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 152 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setflag FLAG_PETALBURG_RECEIVED_POKEMON
+# 153 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	call NicknameBoxMon3
 	goto PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_1
 
 
 NicknamePartyMon3::
-# 167 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 175 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox NicknamePartyMon3_Text_0, MSGBOX_YESNO
-# 168 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 176 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	hidemonpic
-# 169 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 177 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknamePartyMon3_1
 	return
 
 NicknamePartyMon3_1:
-# 170 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 178 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	call Common_EventScript_GetGiftMonPartySlot
-# 171 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 179 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	call Common_EventScript_NameReceivedPartyMon
 	return
 
 
 NicknameBoxMon3::
-# 179 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 187 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	msgbox NicknamePartyMon3_Text_0, MSGBOX_YESNO
-# 180 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 188 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	hidemonpic
-# 181 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 189 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq NicknameBoxMon3_2
 NicknameBoxMon3_1:
-# 184 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 192 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	call Common_EventScript_TransferredToPC
 	return
 
 NicknameBoxMon3_2:
-# 182 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 190 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	call Common_EventScript_NameReceivedBoxMon
 	goto NicknameBoxMon3_1
+
+
+PetalburgCityGym_SecretRoom_EnterSecretRoom::
+# 202 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	msgbox PetalburgCityGym_SecretRoom_EnterSecretRoom_Text_0
+# 203 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	setvar VAR_PETALBURG_SECRET_ROOM_ENTERED, 1
+# 204 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	waitmessage
+# 205 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	releaseall
+	end
 
 
 PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_Text_0:
@@ -335,49 +363,53 @@ PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_Text_1:
 	.string "Recieved the IGGLYBUFF!$"
 
 PetalburgCity_Gym_AccuracyRoomEventScript_IgglybuffBall_Text_2:
-# 33 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 35 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	.string "No more room!$"
 
 PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_0:
-# 49 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 51 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	.string "Do you want to choose DROWZEE?\pThis Pokemon was trained to never\nmiss a move.$"
 
 PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_1:
-# 54 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 56 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	.string "Recieved the DROWZEE!$"
 
 PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_2:
-# 63 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 66 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	.string "Recieved the DROWZEE$"
 
 PetalburgCity_Gym_AccuracyRoomEventScript_DrowzeeBall_Text_3:
-# 72 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 76 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	.string "No More Room$"
 
 PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_Text_0:
-# 88 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 92 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	.string "Do you want to choose PARAS?\pThis Pokemon was trained to always\nmove first.$"
 
 PetalburgCity_Gym_SpeedRoomEventScript_ParasBall_Text_1:
-# 93 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 97 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	.string "Recieved the PARAS!$"
 
 PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_Text_0:
-# 126 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 132 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	.string "Do you want to choose MANTYKE?\pThis Pokemon was trained to always\nmove first.$"
 
 PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_Text_1:
-# 131 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 137 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	.string "Recieved the MANTYKE!$"
 
 PetalburgCity_Gym_SpeedRoomEventScript_MantykeBall_Text_2:
-# 140 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 147 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	.string "Recieved the MANTYKE$"
 
 NicknamePartyMon3_Text_0:
-# 167 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 175 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	.string "Give it a nickname?$"
 
+PetalburgCityGym_SecretRoom_EnterSecretRoom_Text_0:
+# 202 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+	.string "A chill runs down your spine.\nYou feel like you shouldn't be here.\pYou know that if you steal a POKÉMON,\nboth rooms will lock when you leave.$"
+
 PetalburgCity_Gym_Pokemon_NotChosen::
-# 188 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
+# 196 "data/maps/PetalburgCity_Gym_SecretRoom/scripts.pory"
 	.string "Better to leave it where it is.$"

@@ -566,7 +566,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_1,
 	      gText_SideQuestDoneDesc_1,
 	      gText_SideQuestMap1,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_SWABLU_DOLL,
 	      OBJECT,
 	      NULL,
 	      0
@@ -1164,7 +1164,7 @@ static bool8 LoadGraphics(void)
 			}
 			break;
 		case 2:
-			LoadCompressedPalette(sQuestMenuBgPals, 0x00, 0x60);
+			LoadPalette(sQuestMenuBgPals, 0x00, 0x60);
 			sStateDataPtr->data[0]++;
 			break;
 		case 3:
@@ -2190,24 +2190,23 @@ static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType)
 				break;
 			case PKMN:
 				LoadMonIconPalettes();
-				spriteId = CreateMonIcon(itemId, SpriteCallbackDummy, 20, 132, 0, 1, 1);
+				spriteId = CreateMonIcon(itemId, SpriteCallbackDummy, 20, 132, 0, 1);
 				break;
 			default:
 				break;
 		}
 
-		gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
+	if (spriteId != 0xFF && spriteId < MAX_SPRITES)
+{
+    gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
+    ptr[idx] = spriteId;
 
-		if (spriteId != MAX_SPRITES)
-		{
-			ptr[idx] = spriteId;
-
-			if (spriteType == ITEM)
-			{
-				gSprites[spriteId].x2 = 24;
-				gSprites[spriteId].y2 = 140;
-			}
-		}
+    if (spriteType == ITEM)
+    {
+        gSprites[spriteId].x2 = 24;
+        gSprites[spriteId].y2 = 140;
+    }
+}
 	}
 }
 

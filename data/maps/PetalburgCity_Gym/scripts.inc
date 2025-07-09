@@ -3215,7 +3215,7 @@ PetalburgCity_Gym_Sign_YesNoAccuracyRoom::
 	compare VAR_RESULT, YES
 	goto_if_eq PetalburgCity_Gym_Sign_YesNoAccuracyRoom_2
 # 1619 "data/maps/PetalburgCity_Gym/scripts.pory"
-	msgbox PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_2
+	msgbox PetalburgCity_Gym_Sign_YesNoAccuracyRoom_Text_1
 PetalburgCity_Gym_Sign_YesNoAccuracyRoom_1:
 # 1621 "data/maps/PetalburgCity_Gym/scripts.pory"
 	releaseall
@@ -3231,7 +3231,7 @@ PetalburgCity_Gym_Sign_YesNoAccuracyRoom_2:
 
 PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_0:
 # 1600 "data/maps/PetalburgCity_Gym/scripts.pory"
-	.string "Sneak in the SPEED room?\nIf you enter, the other door will lock.$"
+	.string "Sneak into the SPEED room?$"
 
 PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_1:
 # 1602 "data/maps/PetalburgCity_Gym/scripts.pory"
@@ -3239,8 +3239,12 @@ PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_1:
 
 PetalburgCity_Gym_Sign_YesNoSpeedRoom_Text_2:
 # 1605 "data/maps/PetalburgCity_Gym/scripts.pory"
-	.string "Sneaking is for naughty dogs!$"
+	.string "DAD Probably wouldn't like that...!$"
 
 PetalburgCity_Gym_Sign_YesNoAccuracyRoom_Text_0:
 # 1614 "data/maps/PetalburgCity_Gym/scripts.pory"
-	.string "Sneak in the ACCURACY room?\nIf you enter, the other door lock.$"
+	.string "Sneak into the ACCURACY room?$"
+
+PetalburgCity_Gym_Sign_YesNoAccuracyRoom_Text_1:
+# 1619 "data/maps/PetalburgCity_Gym/scripts.pory"
+	.string "DAD Probably wouldn't like that...$"
