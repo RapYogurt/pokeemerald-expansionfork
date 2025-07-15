@@ -2030,3 +2030,25 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 # 1016 "data/maps/LittlerootTown/scripts.pory"
 	.string "Let's go to my LAB.$"
+
+LittlerootTown_EventScript_BattleTest::
+# 1020 "data/maps/LittlerootTown/scripts.pory"
+	trainerbattle_single TRAINER_TEST, Test_Intro, Test_Outro
+# 1021 "data/maps/LittlerootTown/scripts.pory"
+	msgbox PostBattle_Test, MSGBOX_AUTOCLOSE
+# 1022 "data/maps/LittlerootTown/scripts.pory"
+	waitmessage
+	end
+
+
+Test_Intro::
+# 1027 "data/maps/LittlerootTown/scripts.pory"
+	.string "Initializing Test.$"
+
+Test_Outro::
+# 1031 "data/maps/LittlerootTown/scripts.pory"
+	.string "Test Complete$"
+
+PostBattle_Test::
+# 1035 "data/maps/LittlerootTown/scripts.pory"
+	.string "We already battled$"

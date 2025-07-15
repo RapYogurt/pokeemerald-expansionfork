@@ -16879,7 +16879,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_DEOXYS_BURIED ===
 Name: DEOXYS
 Class: RS Protag
-Pic: DEOXYS
+Pic: RS May
 Gender: Female
 Music: Male
 Double Battle: No
@@ -16888,3 +16888,38 @@ Deoxys @ Sitrus Berry
 Level: 78
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Memento
+
+=== TRAINER_TEST ===
+Name: TrainBot
+Class: RS Protag
+Pic: RS May
+Gender: Female
+Music: Male
+Double Battle: No
+
+Komala  
+Ability: Comatose  
+Level: 1  
+IVs: 0 Atk  
+- Calm Mind  
+- Curse  
+- Recover  
+
+Smeargle  
+Ability: Own Tempo  
+Level: 1   
+IVs: 0 Atk  
+- Recover  
+- Slack Off  
+- Agility  
+- Iron Defense  
+
+Alomomola  
+Ability: Hydration  
+Level: 1   
+IVs: 0 Atk  
+- Calm Mind  
+- Light Screen  
+- Reflect  
+
+

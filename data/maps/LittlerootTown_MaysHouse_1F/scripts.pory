@@ -415,13 +415,19 @@ RivalsHouse_1F_Text_DoYouHavePokemon:
 mapscripts LittlerootTown_MaysHouse_1F{
     
 }
-script LittlerootTown_QuestStart_AttractMom {
-questmenu QUEST_MENU_SET_ACTIVE QUEST_ATTRACT_MOM
-openquestmenu
-startquest QUEST_ATTRACT_MOM
+
+script LittlerootTown_QuestStart_InfinityStones{
+lockall
+msgbox("Hey! accept this quest for me!")
+startquest (QUEST_INFINITY_STONES)
+setflag (FLAG_QUEST_START_INFINITY_STONES)
 end
 }
 
-
-
+script LittlerootTown_MidQuest_InfinityStones{
+lockall
+msgbox("Ooga Booga You're mid Quest!")
+waitmessage
+end
+}
 

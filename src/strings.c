@@ -1351,7 +1351,7 @@ const u8 gText_SideQuestName_29[] = _("Side Quest 29");
 const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
-const u8 gText_SideQuestDesc_1[] = _("Help this lonely Mother burn some daylight\nATTRACT that Mom!");
+const u8 gText_SideQuestDesc_1[] = _("Help this lonely Mother unwind,\nATTRACT that Mom!");
 const u8 gText_SideQuestDesc_2[] = _("Description 2");
 const u8 gText_SideQuestDesc_3[] = _("Description 3");
 const u8 gText_SideQuestDesc_4[] = _("Description 4");

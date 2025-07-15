@@ -2806,7 +2806,7 @@ static u32 GetNightmareDamage(u32 battlerId)
     u32 damage = 0;
     if ((gBattleMons[battlerId].status2 & STATUS2_NIGHTMARE) && gBattleMons[battlerId].status1 & STATUS1_SLEEP)
     {
-        damage = GetNonDynamaxMaxHP(battlerId) / 4;
+        damage = GetNonDynamaxMaxHP(battlerId) / 3.4;
         if (damage == 0)
             damage = 1;
     }

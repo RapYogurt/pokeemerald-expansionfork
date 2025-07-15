@@ -385,19 +385,6 @@ RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext:
 
 mapscripts RustboroCity_DevonCorp_2F{}
     
-script RustboroCity_DevonCorp_2F_Porygon_Encounter{
- 
-    lockall
-    msgbox("You see a PC on the desk.\n It seems to contain something unusual...\p")
-    if(var(VAR_RESULT) == YES){
-        givemon(SPECIES_PIKACHU_STARTER, 5, ITEM_LOVE_BALL)
-    }
-    else{
-        msgbox("You don't want this Pikachu? It will\nbe released into the wild.")
-        releaseall
-        return
-    } }
-
 script RustboroCity_DevonCorp_2F_Steal_Porygon{
 // This script is for the event where the player can steal Porygon from the PC in Devon Corp 2F
 

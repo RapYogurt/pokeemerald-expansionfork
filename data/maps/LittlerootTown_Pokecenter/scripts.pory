@@ -52,3 +52,4 @@ script Littleroot_PokemonCenter_1F_EventScript_Nurse{
         msgbox("Have a nice day", MSGBOX_NPC)
     }
 }
+

@@ -823,12 +823,36 @@ RivalsHouse_1F_Text_DoYouHavePokemon:
 # 412 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	.string "to ATTRACT her, you should try!$"
 
-LittlerootTown_QuestStart_AttractMom::
-# 416 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	openquestmenu
-# 417 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	startquest
-# 417 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	QUEST_ATTRACT_MOM
+LittlerootTown_MaysHouse_1F::
+	.byte 0
+
+
+LittlerootTown_QuestStart_InfinityStones::
+# 420 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	lockall
+# 421 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox LittlerootTown_QuestStart_InfinityStones_Text_0
+# 422 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	startquest QUEST_INFINITY_STONES
+# 423 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	setflag FLAG_QUEST_START_INFINITY_STONES
 	end
 
+
+LittlerootTown_MidQuest_InfinityStones::
+# 428 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	lockall
+# 429 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox LittlerootTown_MidQuest_InfinityStones_Text_0
+# 430 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	waitmessage
+	end
+
+
+LittlerootTown_QuestStart_InfinityStones_Text_0:
+# 421 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "Hey! accept this quest for me!$"
+
+LittlerootTown_MidQuest_InfinityStones_Text_0:
+# 429 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "Ooga Booga You're mid Quest!$"

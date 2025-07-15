@@ -1016,7 +1016,25 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "Let's go to my LAB.$"
 `
 
-
+script LittlerootTown_EventScript_BattleTest{
+	trainerbattle_single(TRAINER_TEST, Test_Intro, Test_Outro)
+	msgbox(PostBattle_Test, MSGBOX_AUTOCLOSE) 
+	waitmessage
+    end
+ 
+}
+ 
+text Test_Intro{
+    "Initializing Test."
+}
+ 
+text Test_Outro{
+    "Test Complete"
+}
+ 
+text PostBattle_Test{
+    "We already battled"
+}
 
 
 	

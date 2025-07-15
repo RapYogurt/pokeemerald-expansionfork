@@ -42198,7 +42198,7 @@ F_TRAINER_FEMALE |
 #line 16881
         .trainerClass = TRAINER_CLASS_RS_PROTAG,
 #line 16882
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerPic = TRAINER_PIC_RS_MAY,
         .encounterMusic_gender =
 #line 16883
 F_TRAINER_FEMALE | 
@@ -42224,6 +42224,85 @@ F_TRAINER_FEMALE |
             .moves = {
 #line 16890
                 MOVE_MEMENTO,
+            },
+            },
+        },
+    },
+#line 16892
+    [DIFFICULTY_NORMAL][TRAINER_TEST] =
+    {
+#line 16893
+        .trainerName = _("TrainBot"),
+#line 16894
+        .trainerClass = TRAINER_CLASS_RS_PROTAG,
+#line 16895
+        .trainerPic = TRAINER_PIC_RS_MAY,
+        .encounterMusic_gender =
+#line 16896
+F_TRAINER_FEMALE | 
+#line 16897
+            TRAINER_ENCOUNTER_MUSIC_MALE,
+#line 16898
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+        .partySize = 3,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 16900
+            .species = SPECIES_KOMALA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16903
+            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+#line 16901
+            .ability = ABILITY_COMATOSE,
+#line 16902
+            .lvl = 1,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 16904
+                MOVE_CALM_MIND,
+                MOVE_CURSE,
+                MOVE_RECOVER,
+            },
+            },
+            {
+#line 16908
+            .species = SPECIES_SMEARGLE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16911
+            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+#line 16909
+            .ability = ABILITY_OWN_TEMPO,
+#line 16910
+            .lvl = 1,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 16912
+                MOVE_RECOVER,
+                MOVE_SLACK_OFF,
+                MOVE_AGILITY,
+                MOVE_IRON_DEFENSE,
+            },
+            },
+            {
+#line 16917
+            .species = SPECIES_ALOMOMOLA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16920
+            .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
+#line 16918
+            .ability = ABILITY_HYDRATION,
+#line 16919
+            .lvl = 1,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 16921
+                MOVE_CALM_MIND,
+                MOVE_LIGHT_SCREEN,
+                MOVE_REFLECT,
             },
             },
         },

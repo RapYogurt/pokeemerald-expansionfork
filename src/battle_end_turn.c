@@ -720,7 +720,7 @@ static bool32 HandleEndTurnNightmare(u32 battler)
     {
         if (gBattleMons[battler].status1 & STATUS1_SLEEP)
         {
-            gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 4;
+            gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 3;
             if (gBattleStruct->moveDamage[battler] == 0)
                 gBattleStruct->moveDamage[battler] = 1;
             BattleScriptExecute(BattleScript_NightmareTurnDmg);

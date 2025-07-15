@@ -767,178 +767,150 @@ RustboroCity_DevonCorp_2F::
 	.byte 0
 
 
-RustboroCity_DevonCorp_2F_Porygon_Encounter::
-# 390 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
-	lockall
-# 391 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_2F_Porygon_Encounter_Text_0
-# 392 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
-	compare VAR_RESULT, YES
-	goto_if_eq RustboroCity_DevonCorp_2F_Porygon_Encounter_1
-# 396 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
-	msgbox RustboroCity_DevonCorp_2F_Porygon_Encounter_Text_1
-# 397 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
-	releaseall
-	return
-
-RustboroCity_DevonCorp_2F_Porygon_Encounter_1:
-# 393 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
-	givemon SPECIES_PIKACHU_STARTER, 5, ITEM_LOVE_BALL
-	return
-
-
 RustboroCity_DevonCorp_2F_Steal_Porygon::
-# 404 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 391 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	lockall
-# 405 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 392 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Porygon_Text_0
-# 406 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 393 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Porygon_Text_1
-# 407 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 394 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Porygon_Text_2, MSGBOX_YESNO
-# 408 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 395 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq RustboroCity_DevonCorp_2F_Steal_Porygon_2
-# 427 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 414 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	hidemonpic
-# 428 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 415 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Porygon_Text_4
 RustboroCity_DevonCorp_2F_Steal_Porygon_1:
-# 430 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 417 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	waitmessage
-# 431 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 418 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	releaseall
 	end
 
 RustboroCity_DevonCorp_2F_Steal_Porygon_2:
-# 409 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 396 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	givemon SPECIES_PORYGON, 15, ITEM_UP_GRADE
-# 410 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 397 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq RustboroCity_DevonCorp_2F_Steal_Porygon_5
-# 416 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 403 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq RustboroCity_DevonCorp_2F_Steal_Porygon_6
-# 423 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 410 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Porygon_Text_4
 	goto RustboroCity_DevonCorp_2F_Steal_Porygon_1
 
 RustboroCity_DevonCorp_2F_Steal_Porygon_5:
-# 411 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 398 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 412 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 399 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Porygon_Text_3
-# 414 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 401 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	call NicknamePartyMon
 	goto RustboroCity_DevonCorp_2F_Steal_Porygon_1
 
 RustboroCity_DevonCorp_2F_Steal_Porygon_6:
-# 417 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 404 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 418 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 405 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Porygon_Text_3
-# 420 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 407 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	call NicknameBoxMon
 	goto RustboroCity_DevonCorp_2F_Steal_Porygon_1
 
 
 RustboroCity_DevonCorp_2F_Steal_Rotom::
-# 438 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 425 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	lockall
-# 439 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 426 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Rotom_Text_0
-# 440 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 427 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Rotom_Text_1
-# 441 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 428 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Rotom_Text_2, MSGBOX_YESNO
-# 442 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 429 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	compare VAR_RESULT, YES
 	goto_if_eq RustboroCity_DevonCorp_2F_Steal_Rotom_2
-# 461 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 448 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Rotom_Text_4
 RustboroCity_DevonCorp_2F_Steal_Rotom_1:
-# 463 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 450 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	waitmessage
-# 464 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 451 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	releaseall
 	end
 
 RustboroCity_DevonCorp_2F_Steal_Rotom_2:
-# 443 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 430 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	givemon SPECIES_ROTOM, 15, ITEM_EJECT_BUTTON
-# 444 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 431 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq RustboroCity_DevonCorp_2F_Steal_Rotom_5
-# 450 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 437 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	compare VAR_RESULT, MON_GIVEN_TO_PC
 	goto_if_eq RustboroCity_DevonCorp_2F_Steal_Rotom_6
-# 457 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 444 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Rotom_Text_4
 	goto RustboroCity_DevonCorp_2F_Steal_Rotom_1
 
 RustboroCity_DevonCorp_2F_Steal_Rotom_5:
-# 445 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 432 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 446 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 433 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Rotom_Text_3
-# 448 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 435 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	call NicknamePartyMon
 	goto RustboroCity_DevonCorp_2F_Steal_Rotom_1
 
 RustboroCity_DevonCorp_2F_Steal_Rotom_6:
-# 451 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 438 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 452 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 439 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	msgbox RustboroCity_DevonCorp_2F_Steal_Rotom_Text_3
-# 454 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 441 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	call NicknameBoxMon
 	goto RustboroCity_DevonCorp_2F_Steal_Rotom_1
 
 
-RustboroCity_DevonCorp_2F_Porygon_Encounter_Text_0:
-# 391 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
-	.string "You see a PC on the desk.\n It seems to contain something unusual...\p$"
-
-RustboroCity_DevonCorp_2F_Porygon_Encounter_Text_1:
-# 396 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
-	.string "You don't want this Pikachu? It will\nbe released into the wild.$"
-
 RustboroCity_DevonCorp_2F_Steal_Porygon_Text_0:
-# 405 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 392 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "You see a PC on the desk.\nIt’s running a mysterious program...$"
 
 RustboroCity_DevonCorp_2F_Steal_Porygon_Text_1:
-# 406 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 393 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "A flash drive is plugged into the PC.\nIt contains a digital Pokémon: PORYGON.$"
 
 RustboroCity_DevonCorp_2F_Steal_Porygon_Text_2:
-# 407 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 394 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "You could steal the flash drive and\ntake the PORYGON with you or leave it.\p You don't think you could\n get away with theft twice.\p Will you steal the drive?$"
 
 RustboroCity_DevonCorp_2F_Steal_Porygon_Text_3:
-# 412 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 399 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "You quietly take the flash drive.\nPORYGON is now yours.$"
 
 RustboroCity_DevonCorp_2F_Steal_Porygon_Text_4:
-# 423 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 410 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "You decide to leave the flash drive\n where it is.$"
 
 RustboroCity_DevonCorp_2F_Steal_Rotom_Text_0:
-# 439 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 426 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "You see a PC on the desk. It’s seems\nto be controlled by a mysterious entity...$"
 
 RustboroCity_DevonCorp_2F_Steal_Rotom_Text_1:
-# 440 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 427 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "You notice a program 'EJECT_0479'.\pIt may let you eject the\nentity and steal it.$"
 
 RustboroCity_DevonCorp_2F_Steal_Rotom_Text_2:
-# 441 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 428 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "You don't think you could\nget away with theft twice.\pWill you eject the entity?$"
 
 RustboroCity_DevonCorp_2F_Steal_Rotom_Text_3:
-# 446 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 433 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "You discreetly run the program.\pA ROTOM zips out of the PC and into\nyour bag.$"
 
 RustboroCity_DevonCorp_2F_Steal_Rotom_Text_4:
-# 457 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
+# 444 "data/maps/RustboroCity_DevonCorp_2F/scripts.pory"
 	.string "You decide not to run the program.$"
