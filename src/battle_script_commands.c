@@ -15709,8 +15709,11 @@ static void Cmd_handleballthrow(void)
         return;
 
     gBattlerTarget = GetCatchingBattler();
-
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+    //    if (ballId == BALL_SNAG)            // I wrote this to attempt to create a snag ball
+      //      {
+          //      shakes = maxShakes;
+        //    }
+ if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         BtlController_EmitBallThrowAnim(gBattlerAttacker, B_COMM_TO_CONTROLLER, BALL_TRAINER_BLOCK);
         MarkBattlerForControllerExec(gBattlerAttacker);

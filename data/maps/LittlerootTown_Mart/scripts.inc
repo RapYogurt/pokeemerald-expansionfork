@@ -29,6 +29,7 @@ LittlerootTown_Mart_Pokemart_Basic:
 	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_EXP_SHARE
 	.2byte ITEM_MASTER_BALL
+	.2byte ITEM_SNAG_BALL
 	pokemartlistend
 
 

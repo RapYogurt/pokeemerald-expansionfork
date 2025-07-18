@@ -234,6 +234,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_MasterBall,
     },
 
+    [ITEM_SNAG_BALL] =
+    {
+        .name = _("Master Ball"),
+        .price = 100,
+        .description = COMPOUND_STRING(
+            "An illegal ball\n"
+            "from the Orre Region\n"
+            "that steals Pokémon."),
+        .pocket = POCKET_POKE_BALLS,
+        .type = ITEM_USE_BAG_MENU,
+        .battleUsage = EFFECT_ITEM_THROW_BALL,
+        .secondaryId = BALL_SNAG,
+        .iconPic = gItemIcon_BeastBall,
+        .iconPalette = gItemIconPalette_BeastBall,
+    },
+
     [ITEM_PREMIER_BALL] =
     {
         .name = _("Premier Ball"),

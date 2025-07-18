@@ -907,8 +907,9 @@
 #define MOVE_PSYCHIC_NOISE 845
 #define MOVE_UPPER_HAND 846
 #define MOVE_MALIGNANT_CHAIN 847
-
-#define MOVES_COUNT_GEN9 848
+// Custom Moves from RAP Yogurt
+#define MOVE_SPOOK 848
+#define MOVES_COUNT_GEN9 849
 
 #define MOVES_COUNT         MOVES_COUNT_GEN9
 

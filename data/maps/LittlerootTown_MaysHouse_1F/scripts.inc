@@ -845,7 +845,9 @@ LittlerootTown_MidQuest_InfinityStones::
 # 429 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	msgbox LittlerootTown_MidQuest_InfinityStones_Text_0
 # 430 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	waitmessage
+	closemessage
+# 431 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	releaseall
 	end
 
 

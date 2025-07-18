@@ -84,6 +84,7 @@ const struct CompressedSpriteSheet gBallSpriteSheets[POKEBALL_COUNT] =
     [BALL_GREAT]   = {gBallGfx_Great,   384, GFX_TAG_GREAT_BALL},
     [BALL_ULTRA]   = {gBallGfx_Ultra,   384, GFX_TAG_ULTRA_BALL},
     [BALL_MASTER]  = {gBallGfx_Master,  384, GFX_TAG_MASTER_BALL},
+        [BALL_SNAG]  = {gBallGfx_Beast,  384, GFX_TAG_MASTER_BALL}, // ME AS HELL
     [BALL_PREMIER] = {gBallGfx_Premier, 384, GFX_TAG_PREMIER_BALL},
     [BALL_HEAL]    = {gBallGfx_Heal,    384, GFX_TAG_HEAL_BALL},
     [BALL_NET]     = {gBallGfx_Net,     384, GFX_TAG_NET_BALL},
@@ -116,6 +117,7 @@ const struct SpritePalette gBallSpritePalettes[POKEBALL_COUNT] =
     [BALL_GREAT]   = {gBallPal_Great,   GFX_TAG_GREAT_BALL},
     [BALL_ULTRA]   = {gBallPal_Ultra,   GFX_TAG_ULTRA_BALL},
     [BALL_MASTER]  = {gBallPal_Master,  GFX_TAG_MASTER_BALL},
+        [BALL_SNAG]  = {gBallPal_Master,  GFX_TAG_MASTER_BALL}, // ME AS HELL AGAIN
     [BALL_PREMIER] = {gBallPal_Premier, GFX_TAG_PREMIER_BALL},
     [BALL_HEAL]    = {gBallPal_Heal,    GFX_TAG_HEAL_BALL},
     [BALL_NET]     = {gBallPal_Net,     GFX_TAG_NET_BALL},
@@ -300,6 +302,16 @@ const struct SpriteTemplate gBallSpriteTemplates[POKEBALL_COUNT] =
     {
         .tileTag = GFX_TAG_MASTER_BALL,
         .paletteTag = GFX_TAG_MASTER_BALL,
+        .oam = &sBallOamData,
+        .anims = sBallAnimSequences,
+        .images = NULL,
+        .affineAnims = sAffineAnim_BallRotate,
+        .callback = SpriteCB_BallThrow,
+    },
+        [BALL_SNAG] =
+    {
+        .tileTag = GFX_TAG_BEAST_BALL,
+        .paletteTag = GFX_TAG_BEAST_BALL,
         .oam = &sBallOamData,
         .anims = sBallAnimSequences,
         .images = NULL,

@@ -22850,4 +22850,25 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .ignoresProtect = TRUE,
         .battleAnimScript = gBattleAnimMove_GMaxRapidFlow,
     },
+
+    [MOVE_SPOOK] =
+    {
+        .name = COMPOUND_STRING("Spook"),
+        .description = COMPOUND_STRING(
+            "A swift motion that sends a\n"
+            "jolt straight to the heart."),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_GHOST,
+        .accuracy = 100,
+        .pp = 40,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = EFFECT_CURSE, // boosts speed???
+            .chance = 100,
+        }),
+        .battleAnimScript = gBattleAnimMove_Astonish,
+    },
 };

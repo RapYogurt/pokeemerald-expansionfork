@@ -17,6 +17,7 @@ static const u16 sLotteryPrizes[] =
     ITEM_EXP_SHARE,
     ITEM_MAX_REVIVE,
     ITEM_MASTER_BALL,
+    ITEM_SNAG_BALL,
 };
 
 static u8 GetMatchingDigits(u16, u16);

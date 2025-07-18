@@ -427,7 +427,8 @@ end
 script LittlerootTown_MidQuest_InfinityStones{
 lockall
 msgbox("Ooga Booga You're mid Quest!")
-waitmessage
+closemessage
+releaseall
 end
 }
 
