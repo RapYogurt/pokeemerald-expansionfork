@@ -48,7 +48,7 @@ SINGLE_BATTLE_TEST("Curse applies to the user if used with Protean")
         s32 playerMaxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         ABILITY_POPUP(player, ABILITY_PROTEAN);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CURSE, player);
-        HP_BAR(player, damage: playerMaxHP / 2);
+        HP_BAR(player, damage: playerMaxHP / 1);
         HP_BAR(player, damage: playerMaxHP / 4);
     }
 }
@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("Curse applies to the opponent if user is afflicted by Trick-
         s32 opponentMaxHP = GetMonData(&OPPONENT_PARTY[0], MON_DATA_MAX_HP);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRICK_OR_TREAT, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CURSE, player);
-        HP_BAR(player, damage: playerMaxHP / 2);
+        HP_BAR(player, damage: playerMaxHP / 1);
         HP_BAR(opponent, damage: opponentMaxHP / 4);
     }
 }
