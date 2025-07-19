@@ -30,7 +30,11 @@ OldaleTown_EventScript_TownSign::
 	end
 
 OldaleTown_EventScript_Girl::
-	msgbox OldaleTown_Text_SavingMyProgress, MSGBOX_NPC
+	msgbox OldaleTown_Text_ItsNotSafetoExplore, MSGBOX_NPC
+	end
+
+OldaleTown_EventScript_Boy::
+	msgbox OldaleTown_Text_IWantToExplore, MSGBOX_NPC
 	end
 
 OldaleTown_EventScript_MartEmployee::
@@ -339,9 +343,17 @@ OldaleTown_Movement_ReturnToOriginalPosition:
 	walk_left
 	step_end
 
-OldaleTown_Text_SavingMyProgress:
-	.string "I just barely made it out alive...\n"
-	.string "My little brother didn't make it out...$"
+OldaleTown_Text_ItsNotSafetoExplore:
+	.string "No! I already told you, you're not going!\l"
+	.string "Don't you remember what AUSTIN told us?\n"
+	.string "It's not a safe place to explore!$"
+
+OldaleTown_Text_IWantToExplore:
+	.string "They came to my window again last night...\n"
+	.string "Whispering about OLDALE TOWERS...\p"
+	.string "It's so pretty...\n"
+	.string "They said I should come play...\n"
+	.string "Ill be back home before sundown!$"
 
 OldaleTown_Text_IWorkAtPokemonMart:
 	.string "Hi!\n"

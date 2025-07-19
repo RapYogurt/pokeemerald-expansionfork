@@ -1175,7 +1175,7 @@ mapscripts Route104 {
 
 script Route104_SkipPetapBurgWoodsSign {
     lock
-    msgbox ("You need to go through the forest the first time to rescue the Devon's Worker.")
+    msgbox ("You need to go through the forest the\nfirst time to rescue the Devon's Worker.")
     releaseall
     end
 }

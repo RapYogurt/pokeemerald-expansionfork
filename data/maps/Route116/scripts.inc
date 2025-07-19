@@ -350,10 +350,11 @@ Route116_EventScript_Johnson::
 
 Route116_Text_ScoundrelMadeOffWithPeeko:
 	.string "Ohhh, what am I to do?\p"
-	.string "We were on our walk, PEEKO and I, when\n"
-	.string "we were jumped by an odd thug…\p"
-	.string "The scoundrel made off with my\n"
-	.string "darling PEEKO!\p"
+	.string "We were going to check on my kids,\n"
+	.string "both PEEKO and I, when"
+	.string "we were jumped by a YN.\p"
+	.string "The jittleyang made off with my\n"
+	.string "darling precious PEEKO!\p"
 	.string "Wrrrooooooaaaar! PEEKO!$"
 
 Route116_Text_WantToDigTunnel:

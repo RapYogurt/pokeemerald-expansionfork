@@ -95,3 +95,17 @@ Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry::
 	msgbox Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT
 	release
 	end
+
+Route104_PrettyPetalFlowerShop_EventScript_HatchingShaymin::
+lock
+faceplayer
+msgbox Route104_PrettyPetalFlowerShop_Text_HatchingShaymin, MSGBOX_DEFAULT
+release
+end
+
+Route104_PrettyPetalFlowerShop_Text_HatchingShaymin::
+	.string "I found a cute green eggie!.\n"
+	.string "I'm gonna take good care of it\p"
+	.string "until it hatches, then I'll be it's mama.$"
+
+

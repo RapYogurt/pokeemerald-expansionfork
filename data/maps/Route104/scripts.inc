@@ -2353,4 +2353,4 @@ Route104_SkipPetapBurgWoodsSign::
 
 Route104_SkipPetapBurgWoodsSign_Text_0:
 # 1178 "data/maps/Route104/scripts.pory"
-	.string "You need to go through the forest the first time to rescue the Devon's Worker.$"
+	.string "You need to go through the forest the\nfirst time to rescue the Devon's Worker.$"

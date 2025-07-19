@@ -4436,6 +4436,10 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                 BattleScriptPush(gBattlescriptCurrInstr + 1);
                 gBattlescriptCurrInstr = BattleScript_EffectHealBell_FromHeal;
                 break;
+                            case MOVE_EFFECT_CURSE:
+                BattleScriptPush(gBattlescriptCurrInstr + 1);
+                gBattlescriptCurrInstr = BattleScript_EffectCurse;
+                break;
             case MOVE_EFFECT_RECYCLE_BERRIES:
             {
                 if (RandomPercentage(RNG_G_MAX_REPLENISH, 50))

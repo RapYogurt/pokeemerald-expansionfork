@@ -22851,9 +22851,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_GMaxRapidFlow,
     },
 
-    [MOVE_SPOOK] =
+    [MOVE_JINX] =
     {
-        .name = COMPOUND_STRING("Spook"),
+        .name = COMPOUND_STRING("Jinx"),
         .description = COMPOUND_STRING(
             "A swift motion that sends a\n"
             "jolt straight to the heart."),
@@ -22866,39 +22866,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = EFFECT_CURSE, // boosts speed???
-            .chance = 100,
+            .moveEffect = MOVE_EFFECT_CURSE, // boosts speed???
+            .chance = 10,
         }),
         .battleAnimScript = gBattleAnimMove_Astonish,
     },
-        [MOVE_DEMON_BOOK] =
-    {
-        .name = COMPOUND_STRING("Demon Book"),
-        .description = COMPOUND_STRING(
-            "The best move from a list\n"
-            "is chosen based on the foe."),
-        .effect = EFFECT_DEMON_BOOK,
-        .power = 0,
-        .type = TYPE_GHOST,
-        .accuracy = 0,
-        .pp = 10,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
-        .zMove = { .effect = Z_EFFECT_ATK_UP_1 },
-        .ignoresProtect = TRUE,
-        .mirrorMoveBanned = TRUE,
-        .metronomeBanned = TRUE,
-        .copycatBanned = TRUE,
-        .sleepTalkBanned = TRUE,
-        .instructBanned = TRUE,
-        .encoreBanned = TRUE,
-        .assistBanned = TRUE,
-        .mimicBanned = TRUE,
-        .contestEffect = CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS,
-        .contestCategory = CONTEST_CATEGORY_CUTE,
-        .contestComboStarterId = 0,
-        .contestComboMoves = {0},
-        .battleAnimScript = gBattleAnimMove_DemonBook,
 };
 
