@@ -17,7 +17,7 @@
 // quest number defines
 #define QUEST_NONE                      0xFFFF
 #define QUEST_INFINITY_STONES          0
-#define QUEST_2          1
+#define QUEST_SAVE_BRINEY_KIDS          1
 #define QUEST_3          2
 #define QUEST_4          3
 #define QUEST_5          4

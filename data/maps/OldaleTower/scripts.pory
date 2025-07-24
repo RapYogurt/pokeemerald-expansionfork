@@ -1,0 +1,14 @@
+raw`OldaleTower_MapScripts::
+	.byte 0
+`
+
+mapscripts OldaleTower {
+    
+}
+
+script OldaleTower_LostGirl_HelpFindBrother {
+    lockall
+    msgbox ("waaah help find brother")
+    releaseall
+    end
+}

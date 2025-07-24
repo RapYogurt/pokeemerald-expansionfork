@@ -337,6 +337,7 @@ RusturfTunnel_EventScript_Grunt::
 	setvar VAR_RUSTBORO_CITY_STATE, 4
 	setvar VAR_BRINEY_HOUSE_STATE, 1
 	setflag FLAG_HIDE_ROUTE_116_MR_BRINEY
+	clearflag FLAG_HIDE_MRBRINEY_KIDS_QUEST
 	release
 	end
 

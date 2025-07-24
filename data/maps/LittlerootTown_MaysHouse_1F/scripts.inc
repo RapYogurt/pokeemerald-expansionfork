@@ -827,34 +827,137 @@ LittlerootTown_MaysHouse_1F::
 	.byte 0
 
 
-LittlerootTown_QuestStart_InfinityStones::
+LittlerootTown_MaysHouse_1F_Check_Quest_State::
 # 420 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	lockall
 # 421 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	msgbox LittlerootTown_QuestStart_InfinityStones_Text_0
-# 422 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	startquest QUEST_INFINITY_STONES
-# 423 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	setflag FLAG_QUEST_START_INFINITY_STONES
-	end
-
-
-LittlerootTown_MidQuest_InfinityStones::
+	faceplayer
+# 424 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_INFINITY_STONES
+# 425 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	goto_if_eq VAR_RESULT, TRUE, RivalsHouse_1F_EventScript_RivalMom
+# 426 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	questmenu QUEST_MENU_CHECK_ACTIVE, QUEST_INFINITY_STONES
+# 427 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	goto_if_eq VAR_RESULT, FALSE, LittlerootTown_MaysHouse_1F_Quest_Start
 # 428 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	lockall
+	checkpartymove MOVE_ATTRACT
 # 429 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	msgbox LittlerootTown_MidQuest_InfinityStones_Text_0
+	goto_if_eq VAR_RESULT, PARTY_SIZE, No_Pokemon_With_Needed_Move
 # 430 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	closemessage
+	setfieldeffectargument 0, VAR_RESULT
 # 431 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	buffermovename STR_VAR_2, MOVE_ATTRACT
+# 432 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	goto LittlerootTown_MaysHouse_1F_Quest_Complete
+# 433 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	releaseall
 	end
 
 
-LittlerootTown_QuestStart_InfinityStones_Text_0:
-# 421 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	.string "Hey! accept this quest for me!$"
+LittlerootTown_MaysHouse_1F_Quest_Start::
+# 438 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	lockall
+# 439 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox LittlerootTown_MaysHouse_1F_Quest_Start_Text_0
+# 440 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	startquest QUEST_INFINITY_STONES
+# 441 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	releaseall
+	end
 
-LittlerootTown_MidQuest_InfinityStones_Text_0:
-# 429 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	.string "Ooga Booga You're mid Quest!$"
+
+LittlerootTown_MaysHouse_1F_Quest_Complete::
+# 446 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	lockall
+# 447 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox LittlerootTown_MaysHouse_1F_Quest_Complete_Text_0, MSGBOX_YESNO
+# 448 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	compare VAR_RESULT, YES
+	goto_if_eq LittlerootTown_MaysHouse_1F_Quest_Complete_2
+# 462 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox LittlerootTown_MaysHouse_1F_Quest_Complete_Text_3
+# 463 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	releaseall
+	end
+
+LittlerootTown_MaysHouse_1F_Quest_Complete_1:
+# 466 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	releaseall
+# 467 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	special DoDomeConfetti
+	end
+
+LittlerootTown_MaysHouse_1F_Quest_Complete_2:
+# 449 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+# 450 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox LittlerootTown_MaysHouse_1F_Quest_Complete_Text_1
+# 451 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	dofieldeffect FLDEFF_USE_STRENGTH
+# 452 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	waitstate
+# 453 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	playse SE_M_ATTRACT
+# 454 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	waitse
+# 455 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	playse SE_M_ATTRACT
+# 456 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	waitse
+# 457 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox LittlerootTown_MaysHouse_1F_Quest_Complete_Text_2
+# 458 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	giveitem ITEM_POISONIUM_Z
+# 459 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	completequest QUEST_INFINITY_STONES
+	goto LittlerootTown_MaysHouse_1F_Quest_Complete_1
+
+
+No_Pokemon_With_Needed_Move::
+# 471 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	lockall
+# 472 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox No_Pokemon_With_Needed_Move_Text_0
+# 473 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	releaseall
+	end
+
+
+LittlerootTown_MaysHouse_1F_Post_Quest::
+# 480 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	lockall
+# 481 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	msgbox LittlerootTown_MaysHouse_1F_Post_Quest_Text_0
+# 482 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	releaseall
+	end
+
+
+LittlerootTown_MaysHouse_1F_Quest_Start_Text_0:
+# 439 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "Please ATTRACT me start quest.$"
+
+LittlerootTown_MaysHouse_1F_Quest_Complete_Text_0:
+# 447 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "Do you want to ATTRACT this MOM?$"
+
+LittlerootTown_MaysHouse_1F_Quest_Complete_Text_1:
+# 450 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "{STR_VAR_1} used {STR_VAR_2}!$"
+
+LittlerootTown_MaysHouse_1F_Quest_Complete_Text_2:
+# 457 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "Omg wow im so attracted!\nHere, have this!$"
+
+LittlerootTown_MaysHouse_1F_Quest_Complete_Text_3:
+# 462 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "I'm not dealing with this old coot.$"
+
+No_Pokemon_With_Needed_Move_Text_0:
+# 472 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "No Pokemon with ATTRACT Found!$"
+
+LittlerootTown_MaysHouse_1F_Post_Quest_Text_0:
+# 481 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
+	.string "Please come by again.$"

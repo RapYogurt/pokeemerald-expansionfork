@@ -19,7 +19,21 @@
       "direction": "left"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
+      "x": 45,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "OldaleTower_LostGirl_HelpFindBrother",
+      "flag": "FLAG_HIDE_MRBRINEY_KIDS_QUEST"
+    }
+  ],
   "warp_events": [
     {
       "x": 77,

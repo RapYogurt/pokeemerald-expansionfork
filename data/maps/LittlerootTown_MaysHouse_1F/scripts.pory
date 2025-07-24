@@ -416,19 +416,69 @@ mapscripts LittlerootTown_MaysHouse_1F{
     
 }
 
-script LittlerootTown_QuestStart_InfinityStones{
-lockall
-msgbox("Hey! accept this quest for me!")
-startquest (QUEST_INFINITY_STONES)
-setflag (FLAG_QUEST_START_INFINITY_STONES)
-end
+script LittlerootTown_MaysHouse_1F_Check_Quest_State{
+    lockall
+	faceplayer
+	// questmenu(QUEST_MENU_UNLOCK_QUEST, QUEST_INFINITY_STONES)
+	// returnqueststate(QUEST_INFINITY_STONES)
+	questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_INFINITY_STONES)
+	goto_if_eq (VAR_RESULT, TRUE, RivalsHouse_1F_EventScript_RivalMom)
+	questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_INFINITY_STONES)
+	goto_if_eq (VAR_RESULT, FALSE, LittlerootTown_MaysHouse_1F_Quest_Start)
+	checkpartymove (MOVE_ATTRACT)
+	goto_if_eq (VAR_RESULT, PARTY_SIZE, No_Pokemon_With_Needed_Move)
+	setfieldeffectargument( 0, VAR_RESULT)
+	buffermovename (STR_VAR_2, MOVE_ATTRACT)
+	goto (LittlerootTown_MaysHouse_1F_Quest_Complete)
+    releaseall
+    end
 }
 
-script LittlerootTown_MidQuest_InfinityStones{
-lockall
-msgbox("Ooga Booga You're mid Quest!")
-closemessage
-releaseall
-end
+script LittlerootTown_MaysHouse_1F_Quest_Start{
+	lockall
+	msgbox ("Please ATTRACT me start quest.")
+	startquest(QUEST_INFINITY_STONES)
+    releaseall
+    end
 }
 
+script LittlerootTown_MaysHouse_1F_Quest_Complete{
+	lockall
+	msgbox("Do you want to ATTRACT this MOM?", MSGBOX_YESNO)
+	if(var(VAR_RESULT) == YES){
+	bufferpartymonnick (STR_VAR_1, VAR_RESULT)
+	msgbox ("{STR_VAR_1} used {STR_VAR_2}!$")
+	dofieldeffect (FLDEFF_USE_STRENGTH)
+	waitstate
+	playse(SE_M_ATTRACT)
+	waitse
+	playse(SE_M_ATTRACT)
+	waitse
+	msgbox("Omg wow im so attracted!\nHere, have this!$")
+	giveitem(ITEM_POISONIUM_Z)
+	completequest (QUEST_INFINITY_STONES)
+	}
+	    else{
+        msgbox("I'm not dealing with this old coot.")
+		releaseall
+		end
+    }
+	releaseall
+	special (DoDomeConfetti)
+	end
+}
+script No_Pokemon_With_Needed_Move{
+    lockall
+    msgbox ("No Pokemon with ATTRACT Found!")
+    releaseall
+    end
+}
+
+
+
+script LittlerootTown_MaysHouse_1F_Post_Quest{ // currently unused
+    lockall
+    msgbox ("Please come by again.")
+    releaseall
+    end
+}

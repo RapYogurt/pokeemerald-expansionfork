@@ -2351,6 +2351,40 @@ Route104_SkipPetapBurgWoodsSign::
 	end
 
 
+Route104_MrBrineyHelpMyKids::
+# 1184 "data/maps/Route104/scripts.pory"
+	lock
+# 1185 "data/maps/Route104/scripts.pory"
+	returnqueststate QUEST_SAVE_BRINEY_KIDS
+# 1186 "data/maps/Route104/scripts.pory"
+	goto_if_eq VAR_RESULT, TRUE, Route104_MrBrineyHelpMyKidsFirst
+# 1187 "data/maps/Route104/scripts.pory"
+	msgbox Route104_MrBrineyHelpMyKids_Text_0
+# 1188 "data/maps/Route104/scripts.pory"
+	releaseall
+	end
+
+
+Route104_MrBrineyHelpMyKidsFirst::
+# 1193 "data/maps/Route104/scripts.pory"
+	msgbox Route104_MrBrineyHelpMyKidsFirst_Text_0
+# 1194 "data/maps/Route104/scripts.pory"
+	startquest QUEST_SAVE_BRINEY_KIDS
+# 1195 "data/maps/Route104/scripts.pory"
+	setflag FLAG_HIDE_MR_BRINEY_KIDS
+# 1196 "data/maps/Route104/scripts.pory"
+	releaseall
+	end
+
+
 Route104_SkipPetapBurgWoodsSign_Text_0:
 # 1178 "data/maps/Route104/scripts.pory"
 	.string "You need to go through the forest the\nfirst time to rescue the Devon's Worker.$"
+
+Route104_MrBrineyHelpMyKids_Text_0:
+# 1187 "data/maps/Route104/scripts.pory"
+	.string "Hurry up!\nMy kids are missing, I left them in \pOLDALE TOWN.$"
+
+Route104_MrBrineyHelpMyKidsFirst_Text_0:
+# 1193 "data/maps/Route104/scripts.pory"
+	.string "Please help!\nMy kids are missing, I left them in \pOLDALE TOWN.$"

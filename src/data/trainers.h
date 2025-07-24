@@ -11883,7 +11883,7 @@ F_TRAINER_FEMALE |
 #line 4803
             .ability = ABILITY_SERENE_GRACE,
 #line 4804
-            .lvl = 8,
+            .lvl = 1,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -11905,7 +11905,7 @@ F_TRAINER_FEMALE |
 #line 4811
             .ability = ABILITY_WONDER_SKIN,
 #line 4812
-            .lvl = 12,
+            .lvl = 1,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -11927,7 +11927,7 @@ F_TRAINER_FEMALE |
 #line 4819
             .ability = ABILITY_STATIC,
 #line 4820
-            .lvl = 15,
+            .lvl = 1,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
 #line 4821

@@ -275,5 +275,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH
 	setflag FLAG_SYS_QUEST_MENU_GET
+	setflag FLAG_HIDE_MRBRINEY_KIDS_QUEST
 	call EventScript_ResetAllBerries
 	end
