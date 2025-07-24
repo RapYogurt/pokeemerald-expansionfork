@@ -259,6 +259,8 @@
 #define MOVEMENT_ACTION_SURF_STILL_UP                   0xAB
 #define MOVEMENT_ACTION_SURF_STILL_LEFT                 0xAC
 #define MOVEMENT_ACTION_SURF_STILL_RIGHT                0xAD
+#define MOVEMENT_ACTION_EMOTE_TALKING                   0x9E
+#define MOVEMENT_ACTION_EMOTE_THINKING                  0x9F
 
 #define MOVEMENT_ACTION_STEP_END 0xFE
 #define MOVEMENT_ACTION_NONE     0xFF

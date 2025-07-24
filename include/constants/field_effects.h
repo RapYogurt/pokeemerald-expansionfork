@@ -78,6 +78,8 @@
 #define FLDEFF_CAVE_DUST                 73
 #define FLDEFF_DEFOG                     74
 #define FLDEFF_QUEST_ICON                75
+#define FLDEFF_TALKING_ICON              67
+#define FLDEFF_THINKING_ICON             68
 
 #define FLDEFFOBJ_SHADOW_S              0
 #define FLDEFFOBJ_SHADOW_M              1

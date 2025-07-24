@@ -82,6 +82,8 @@ gFieldEffectScriptPointers::
 	.4byte gFieldEffectScript_CaveDust                  @ FLDEFF_CAVE_DUST
 	.4byte gFieldEffectScript_Defog                     @ FLDEFF_DEFOG
 	.4byte gFieldEffectScript_QuestIcon					@ FLDEFF_QUEST_ICON
+	.4byte gFieldEffectScript_TalkingIcon               @ FLDEFF_TALKING_ICON
+	.4byte gFieldEffectScript_ThinkingIcon              @ FLDEFF_THINKING_ICON
 
 gFieldEffectScript_ExclamationMarkIcon1::
 	field_eff_callnative FldEff_ExclamationMarkIcon
@@ -389,3 +391,11 @@ gFieldEffectScript_CaveDust::
 gFieldEffectScript_Defog::
     field_eff_callnative FldEff_Defog
     field_eff_end
+
+gFieldEffectScript_TalkingIcon::
+	field_eff_callnative FldEff_TalkingIcon
+	field_eff_end
+
+gFieldEffectScript_ThinkingIcon::
+	field_eff_callnative FldEff_ThinkingIcon
+	field_eff_end
